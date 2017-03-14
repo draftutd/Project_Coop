@@ -1,0 +1,17 @@
+C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\bin\Debug\WPF1.exe.config
+C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\obj\Debug\WPF1.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\obj\Debug\WPF1.Properties.Resources.resources
+C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\obj\Debug\WPF1.csproj.GenerateResource.Cache
+C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\obj\Debug\WPF1.Form2.resources
+C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\bin\Debug\WPF1.exe
+C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\bin\Debug\WPF1.pdb
+C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\obj\Debug\WPF1.exe
+C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\obj\Debug\WPF1.pdb
+C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\obj\Debug\WPF1.Form1.resources
+C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\obj\Debug\WPF1.Form3.resources
+C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\obj\Debug\WPF1.Form4.resources
+C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\obj\Debug\WPF1.Form5.resources
+C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\obj\Debug\WPF1.Form6.resources
+C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\obj\Debug\WPF1.Form7.resources
+C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\obj\Debug\WPF1.Form1_1.resources
+C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\obj\Debug\WPF1.Form8.resources
