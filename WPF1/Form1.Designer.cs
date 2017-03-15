@@ -91,6 +91,7 @@
             // 
             // btnExit
             // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExit.Location = new System.Drawing.Point(936, 21);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(84, 33);
@@ -100,6 +101,8 @@
             // 
             // pnlData
             // 
+            this.pnlData.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlData.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlData.Controls.Add(this.perList);
             this.pnlData.Controls.Add(this.compaList);
@@ -239,12 +242,15 @@
             this.grdList.AllowUserToAddRows = false;
             this.grdList.AllowUserToDeleteRows = false;
             this.grdList.AllowUserToResizeRows = false;
+            this.grdList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.grdList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdList.Location = new System.Drawing.Point(31, 251);
+            this.grdList.Location = new System.Drawing.Point(30, 251);
             this.grdList.MultiSelect = false;
             this.grdList.Name = "grdList";
             this.grdList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdList.Size = new System.Drawing.Size(1004, 350);
+            this.grdList.Size = new System.Drawing.Size(1005, 350);
             this.grdList.TabIndex = 20;
             // 
             // btnAddFile

@@ -15,3 +15,15 @@ C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\obj\Debug\WPF1.Form6.resources
 C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\obj\Debug\WPF1.Form7.resources
 C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\obj\Debug\WPF1.Form1_1.resources
 C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\obj\Debug\WPF1.Form8.resources
+C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\obj\Debug\WPF1.Form10.resources
+C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\obj\Debug\WPF1.Form9.resources
+C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\obj\Debug\WPF1.Form14.resources
+C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\obj\Debug\WPF1.Form12.resources
+C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\obj\Debug\WPF1.Form11.resources
+C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\obj\Debug\WPF1.Form13.resources
+C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\obj\Debug\WPF1.Form16.resources
+C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\obj\Debug\WPF1.Form15.resources
+C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\obj\Debug\WPF1.Form17.resources
+C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\obj\Debug\WPF1.Form18.resources
+C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\obj\Debug\WPF1.Form19.resources
+C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\obj\Debug\WPF1.Form20.resources

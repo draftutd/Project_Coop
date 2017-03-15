@@ -10,16 +10,12 @@ using System.Windows.Forms;
 
 namespace WPF1
 {
-    public partial class Form1_1 : Form
+    public partial class Form20 : Form
     {
-        public Form1_1()
+        public Form20()
         {
             InitializeComponent();
         }
 
-        private void Form1_1_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -31,9 +31,9 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.btncancel = new System.Windows.Forms.Button();
             this.pnlData = new System.Windows.Forms.Panel();
-            this.file = new System.Windows.Forms.Label();
-            this.positionList = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.positionList = new System.Windows.Forms.TextBox();
+            this.file = new System.Windows.Forms.Label();
             this.pnlData.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,6 +57,9 @@
             // 
             // pnlData
             // 
+            this.pnlData.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlData.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlData.Controls.Add(this.btnAdd);
             this.pnlData.Controls.Add(this.positionList);
@@ -65,6 +68,26 @@
             this.pnlData.Name = "pnlData";
             this.pnlData.Size = new System.Drawing.Size(407, 108);
             this.pnlData.TabIndex = 1;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAdd.Location = new System.Drawing.Point(306, 39);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(70, 20);
+            this.btnAdd.TabIndex = 2;
+            this.btnAdd.Text = "เลือกไฟล์";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            // 
+            // positionList
+            // 
+            this.positionList.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.positionList.Location = new System.Drawing.Point(60, 39);
+            this.positionList.Name = "positionList";
+            this.positionList.Size = new System.Drawing.Size(228, 20);
+            this.positionList.TabIndex = 9;
+            this.positionList.Text = " กรุณาเลือกไฟล์";
             // 
             // file
             // 
@@ -75,24 +98,7 @@
             this.file.TabIndex = 0;
             this.file.Text = "ชื่อไฟล์";
             // 
-            // positionList
-            // 
-            this.positionList.Location = new System.Drawing.Point(60, 39);
-            this.positionList.Name = "positionList";
-            this.positionList.Size = new System.Drawing.Size(228, 20);
-            this.positionList.TabIndex = 9;
-            this.positionList.Text = " กรุณาเลือกไฟล์";
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Location = new System.Drawing.Point(306, 39);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(70, 20);
-            this.btnAdd.TabIndex = 2;
-            this.btnAdd.Text = "เลือกไฟล์";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            // 
-            // Form7
+            // Form1_1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -100,8 +106,9 @@
             this.Controls.Add(this.pnlData);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btncancel);
-            this.Name = "Form7";
+            this.Name = "Form1_1";
             this.Text = "Form6";
+            this.Load += new System.EventHandler(this.Form1_1_Load);
             this.pnlData.ResumeLayout(false);
             this.pnlData.PerformLayout();
             this.ResumeLayout(false);
