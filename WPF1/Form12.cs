@@ -17,5 +17,9 @@ namespace WPF1
             InitializeComponent();
         }
 
+        private void pnlData_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

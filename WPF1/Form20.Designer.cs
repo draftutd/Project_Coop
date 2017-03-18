@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form20));
             this.btnSave = new System.Windows.Forms.Button();
             this.btncancel = new System.Windows.Forms.Button();
             this.pnlData = new System.Windows.Forms.Panel();
@@ -53,12 +54,36 @@
             this.category = new System.Windows.Forms.Label();
             this.companyList = new System.Windows.Forms.ComboBox();
             this.company = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.masterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ขอมลแผนกToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ขอมลตำแหนงToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.employeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ขอมลพนกงานToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ขอมลกองทนToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.เงอนไขการสะสมเงนฝากToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.เงอนไขการจายเงนคนToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.transactionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ขอมลNAVตอหนวยของกองทนToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.รายการสะสมเงนฝากและจายคนเขาระบบToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.รายการสะสมเงนฝากและจายคนแบบกลมToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.รายการสะสมเงนฝากและจายคนแบบรายบคคลToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.การจดสรรหนวยลงทนToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.การเตรยมรายการจายเงนคนผานเชคToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.การเตรยมรายการจายเงนคนผานการโอนเงนToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.การปรบปรงขอมลสำหรบการปดกองทนToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.thaiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlData.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(35, 22);
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btnSave.Location = new System.Drawing.Point(38, 53);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(84, 33);
             this.btnSave.TabIndex = 0;
@@ -67,7 +92,8 @@
             // 
             // btncancel
             // 
-            this.btncancel.Location = new System.Drawing.Point(125, 22);
+            this.btncancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btncancel.Location = new System.Drawing.Point(128, 53);
             this.btncancel.Name = "btncancel";
             this.btncancel.Size = new System.Drawing.Size(84, 33);
             this.btncancel.TabIndex = 0;
@@ -99,114 +125,121 @@
             this.pnlData.Controls.Add(this.category);
             this.pnlData.Controls.Add(this.companyList);
             this.pnlData.Controls.Add(this.company);
-            this.pnlData.Location = new System.Drawing.Point(17, 69);
+            this.pnlData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.pnlData.Location = new System.Drawing.Point(12, 100);
             this.pnlData.Name = "pnlData";
-            this.pnlData.Size = new System.Drawing.Size(504, 338);
+            this.pnlData.Size = new System.Drawing.Size(960, 312);
             this.pnlData.TabIndex = 1;
             // 
             // refer
             // 
             this.refer.AutoSize = true;
-            this.refer.Location = new System.Drawing.Point(31, 292);
+            this.refer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.refer.Location = new System.Drawing.Point(32, 236);
             this.refer.Name = "refer";
-            this.refer.Size = new System.Drawing.Size(51, 13);
+            this.refer.Size = new System.Drawing.Size(69, 20);
             this.refer.TabIndex = 29;
             this.refer.Text = "เลขอ้างอิง";
             // 
             // nameEnd
             // 
             this.nameEnd.AutoSize = true;
-            this.nameEnd.Location = new System.Drawing.Point(31, 266);
+            this.nameEnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.nameEnd.Location = new System.Drawing.Point(512, 194);
             this.nameEnd.Name = "nameEnd";
-            this.nameEnd.Size = new System.Drawing.Size(109, 13);
+            this.nameEnd.Size = new System.Drawing.Size(140, 20);
             this.nameEnd.TabIndex = 28;
             this.nameEnd.Text = "รหัสพนักงานปลายทาง";
             // 
             // unit
             // 
             this.unit.AutoSize = true;
-            this.unit.Location = new System.Drawing.Point(31, 240);
+            this.unit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.unit.Location = new System.Drawing.Point(32, 194);
             this.unit.Name = "unit";
-            this.unit.Size = new System.Drawing.Size(68, 13);
+            this.unit.Size = new System.Drawing.Size(82, 20);
             this.unit.TabIndex = 27;
             this.unit.Text = "จำนวนหน่วย";
             // 
             // money
             // 
             this.money.AutoSize = true;
-            this.money.Location = new System.Drawing.Point(31, 214);
+            this.money.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.money.Location = new System.Drawing.Point(512, 153);
             this.money.Name = "money";
-            this.money.Size = new System.Drawing.Size(58, 13);
+            this.money.Size = new System.Drawing.Size(71, 20);
             this.money.TabIndex = 26;
             this.money.Text = "จำนวนเงิน";
             // 
             // referList
             // 
-            this.referList.Location = new System.Drawing.Point(228, 289);
+            this.referList.Location = new System.Drawing.Point(228, 236);
             this.referList.Name = "referList";
-            this.referList.Size = new System.Drawing.Size(246, 20);
+            this.referList.Size = new System.Drawing.Size(246, 22);
             this.referList.TabIndex = 25;
             // 
             // nameEndList
             // 
-            this.nameEndList.Location = new System.Drawing.Point(228, 263);
+            this.nameEndList.Location = new System.Drawing.Point(679, 191);
             this.nameEndList.Name = "nameEndList";
-            this.nameEndList.Size = new System.Drawing.Size(246, 20);
+            this.nameEndList.Size = new System.Drawing.Size(246, 22);
             this.nameEndList.TabIndex = 24;
             // 
             // unitList
             // 
-            this.unitList.Location = new System.Drawing.Point(228, 237);
+            this.unitList.Location = new System.Drawing.Point(228, 194);
             this.unitList.Name = "unitList";
-            this.unitList.Size = new System.Drawing.Size(246, 20);
+            this.unitList.Size = new System.Drawing.Size(246, 22);
             this.unitList.TabIndex = 23;
             // 
             // moneyList
             // 
-            this.moneyList.Location = new System.Drawing.Point(228, 211);
+            this.moneyList.Location = new System.Drawing.Point(679, 153);
             this.moneyList.Name = "moneyList";
-            this.moneyList.Size = new System.Drawing.Size(246, 20);
+            this.moneyList.Size = new System.Drawing.Size(246, 22);
             this.moneyList.TabIndex = 22;
             // 
             // fundList
             // 
             this.fundList.FormattingEnabled = true;
-            this.fundList.Location = new System.Drawing.Point(228, 80);
+            this.fundList.Location = new System.Drawing.Point(228, 69);
             this.fundList.Name = "fundList";
-            this.fundList.Size = new System.Drawing.Size(246, 21);
+            this.fundList.Size = new System.Drawing.Size(246, 24);
             this.fundList.TabIndex = 21;
             this.fundList.Text = "ระบุเลือกกองทุน";
             // 
             // fund
             // 
             this.fund.AutoSize = true;
-            this.fund.Location = new System.Drawing.Point(31, 83);
+            this.fund.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.fund.Location = new System.Drawing.Point(32, 69);
             this.fund.Name = "fund";
-            this.fund.Size = new System.Drawing.Size(40, 13);
+            this.fund.Size = new System.Drawing.Size(52, 20);
             this.fund.TabIndex = 20;
             this.fund.Text = "กองทุน";
             // 
             // codeEmpList
             // 
-            this.codeEmpList.Location = new System.Drawing.Point(228, 54);
+            this.codeEmpList.Location = new System.Drawing.Point(679, 30);
             this.codeEmpList.Name = "codeEmpList";
-            this.codeEmpList.Size = new System.Drawing.Size(246, 20);
+            this.codeEmpList.Size = new System.Drawing.Size(246, 22);
             this.codeEmpList.TabIndex = 13;
             // 
             // codeEmp
             // 
             this.codeEmp.AutoSize = true;
-            this.codeEmp.Location = new System.Drawing.Point(31, 57);
+            this.codeEmp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.codeEmp.Location = new System.Drawing.Point(512, 30);
             this.codeEmp.Name = "codeEmp";
-            this.codeEmp.Size = new System.Drawing.Size(67, 13);
+            this.codeEmp.Size = new System.Drawing.Size(84, 20);
             this.codeEmp.TabIndex = 12;
             this.codeEmp.Text = "รหัสพนักงาน";
             // 
             // dateList
             // 
-            this.dateList.Location = new System.Drawing.Point(228, 185);
+            this.dateList.Location = new System.Drawing.Point(228, 154);
             this.dateList.Name = "dateList";
-            this.dateList.Size = new System.Drawing.Size(246, 20);
+            this.dateList.Size = new System.Drawing.Size(246, 22);
             this.dateList.TabIndex = 11;
             // 
             // categoryList
@@ -216,59 +249,63 @@
             " Buy",
             " Sell",
             " Transfer"});
-            this.categoryList.Location = new System.Drawing.Point(228, 106);
+            this.categoryList.Location = new System.Drawing.Point(679, 69);
             this.categoryList.Name = "categoryList";
-            this.categoryList.Size = new System.Drawing.Size(246, 21);
+            this.categoryList.Size = new System.Drawing.Size(246, 24);
             this.categoryList.TabIndex = 10;
             this.categoryList.Text = " Buy";
             // 
             // date
             // 
             this.date.AutoSize = true;
-            this.date.Location = new System.Drawing.Point(31, 191);
+            this.date.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.date.Location = new System.Drawing.Point(32, 156);
             this.date.Name = "date";
-            this.date.Size = new System.Drawing.Size(89, 13);
+            this.date.Size = new System.Drawing.Size(117, 20);
             this.date.TabIndex = 8;
             this.date.Text = "วันที่ทำรายการ (*)";
             // 
             // transaction2List
             // 
-            this.transaction2List.Location = new System.Drawing.Point(228, 159);
+            this.transaction2List.Location = new System.Drawing.Point(679, 111);
             this.transaction2List.Name = "transaction2List";
-            this.transaction2List.Size = new System.Drawing.Size(246, 20);
+            this.transaction2List.Size = new System.Drawing.Size(246, 22);
             this.transaction2List.TabIndex = 7;
             // 
             // transaction2
             // 
             this.transaction2.AutoSize = true;
-            this.transaction2.Location = new System.Drawing.Point(31, 165);
+            this.transaction2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.transaction2.Location = new System.Drawing.Point(512, 113);
             this.transaction2.Name = "transaction2";
-            this.transaction2.Size = new System.Drawing.Size(126, 13);
+            this.transaction2.Size = new System.Drawing.Size(163, 20);
             this.transaction2.TabIndex = 6;
             this.transaction2.Text = "รอบการจ่ายเงินถึงวันที่ (*)";
             // 
             // transaction1List
             // 
-            this.transaction1List.Location = new System.Drawing.Point(228, 133);
+            this.transaction1List.Location = new System.Drawing.Point(228, 112);
             this.transaction1List.Name = "transaction1List";
-            this.transaction1List.Size = new System.Drawing.Size(246, 20);
+            this.transaction1List.Size = new System.Drawing.Size(246, 22);
             this.transaction1List.TabIndex = 5;
             // 
             // transaction1
             // 
             this.transaction1.AutoSize = true;
-            this.transaction1.Location = new System.Drawing.Point(31, 139);
+            this.transaction1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.transaction1.Location = new System.Drawing.Point(32, 113);
             this.transaction1.Name = "transaction1";
-            this.transaction1.Size = new System.Drawing.Size(141, 13);
+            this.transaction1.Size = new System.Drawing.Size(181, 20);
             this.transaction1.TabIndex = 4;
             this.transaction1.Text = "รอบการจ่ายเงินตั้งแต่วันที่ (*)";
             // 
             // category
             // 
             this.category.AutoSize = true;
-            this.category.Location = new System.Drawing.Point(31, 112);
+            this.category.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.category.Location = new System.Drawing.Point(512, 69);
             this.category.Name = "category";
-            this.category.Size = new System.Drawing.Size(93, 13);
+            this.category.Size = new System.Drawing.Size(122, 20);
             this.category.TabIndex = 2;
             this.category.Text = "ประเภทรายการ (*)";
             // 
@@ -277,32 +314,209 @@
             this.companyList.FormattingEnabled = true;
             this.companyList.Location = new System.Drawing.Point(228, 27);
             this.companyList.Name = "companyList";
-            this.companyList.Size = new System.Drawing.Size(246, 21);
+            this.companyList.Size = new System.Drawing.Size(246, 24);
             this.companyList.TabIndex = 1;
             this.companyList.Text = " ระบุเลือกบริษัท";
             // 
             // company
             // 
             this.company.AutoSize = true;
-            this.company.Location = new System.Drawing.Point(31, 30);
+            this.company.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.company.Location = new System.Drawing.Point(32, 27);
             this.company.Name = "company";
-            this.company.Size = new System.Drawing.Size(75, 13);
+            this.company.Size = new System.Drawing.Size(95, 20);
             this.company.TabIndex = 0;
             this.company.Text = "บริษัทต้นสังกัด";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.masterToolStripMenuItem,
+            this.employeeToolStripMenuItem,
+            this.transactionToolStripMenuItem,
+            this.reportToolStripMenuItem,
+            this.languageToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(984, 25);
+            this.menuStrip1.TabIndex = 25;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // masterToolStripMenuItem
+            // 
+            this.masterToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ขอมลแผนกToolStripMenuItem,
+            this.ขอมลตำแหนงToolStripMenuItem});
+            this.masterToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.masterToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("masterToolStripMenuItem.Image")));
+            this.masterToolStripMenuItem.Name = "masterToolStripMenuItem";
+            this.masterToolStripMenuItem.Size = new System.Drawing.Size(77, 21);
+            this.masterToolStripMenuItem.Text = "Master";
+            // 
+            // ขอมลแผนกToolStripMenuItem
+            // 
+            this.ขอมลแผนกToolStripMenuItem.Name = "ขอมลแผนกToolStripMenuItem";
+            this.ขอมลแผนกToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.ขอมลแผนกToolStripMenuItem.Text = "ข้อมูลแผนก";
+            // 
+            // ขอมลตำแหนงToolStripMenuItem
+            // 
+            this.ขอมลตำแหนงToolStripMenuItem.Name = "ขอมลตำแหนงToolStripMenuItem";
+            this.ขอมลตำแหนงToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.ขอมลตำแหนงToolStripMenuItem.Text = "ข้อมูลตำแหน่ง";
+            // 
+            // employeeToolStripMenuItem
+            // 
+            this.employeeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ขอมลพนกงานToolStripMenuItem,
+            this.ขอมลกองทนToolStripMenuItem,
+            this.เงอนไขการสะสมเงนฝากToolStripMenuItem,
+            this.เงอนไขการจายเงนคนToolStripMenuItem});
+            this.employeeToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.employeeToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("employeeToolStripMenuItem.Image")));
+            this.employeeToolStripMenuItem.Name = "employeeToolStripMenuItem";
+            this.employeeToolStripMenuItem.Size = new System.Drawing.Size(93, 21);
+            this.employeeToolStripMenuItem.Text = "Employee";
+            // 
+            // ขอมลพนกงานToolStripMenuItem
+            // 
+            this.ขอมลพนกงานToolStripMenuItem.Name = "ขอมลพนกงานToolStripMenuItem";
+            this.ขอมลพนกงานToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.ขอมลพนกงานToolStripMenuItem.Text = "ข้อมูลพนักงาน";
+            // 
+            // ขอมลกองทนToolStripMenuItem
+            // 
+            this.ขอมลกองทนToolStripMenuItem.Name = "ขอมลกองทนToolStripMenuItem";
+            this.ขอมลกองทนToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.ขอมลกองทนToolStripMenuItem.Text = "ข้อมูลกองทุน";
+            // 
+            // เงอนไขการสะสมเงนฝากToolStripMenuItem
+            // 
+            this.เงอนไขการสะสมเงนฝากToolStripMenuItem.Name = "เงอนไขการสะสมเงนฝากToolStripMenuItem";
+            this.เงอนไขการสะสมเงนฝากToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.เงอนไขการสะสมเงนฝากToolStripMenuItem.Text = "เงื่อนไขการสะสมเงินฝาก";
+            // 
+            // เงอนไขการจายเงนคนToolStripMenuItem
+            // 
+            this.เงอนไขการจายเงนคนToolStripMenuItem.Name = "เงอนไขการจายเงนคนToolStripMenuItem";
+            this.เงอนไขการจายเงนคนToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.เงอนไขการจายเงนคนToolStripMenuItem.Text = "เงื่อนไขการจ่ายเงินคืน";
+            // 
+            // transactionToolStripMenuItem
+            // 
+            this.transactionToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
+            this.transactionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ขอมลNAVตอหนวยของกองทนToolStripMenuItem,
+            this.รายการสะสมเงนฝากและจายคนเขาระบบToolStripMenuItem,
+            this.รายการสะสมเงนฝากและจายคนแบบกลมToolStripMenuItem,
+            this.รายการสะสมเงนฝากและจายคนแบบรายบคคลToolStripMenuItem,
+            this.การจดสรรหนวยลงทนToolStripMenuItem,
+            this.การเตรยมรายการจายเงนคนผานเชคToolStripMenuItem,
+            this.การเตรยมรายการจายเงนคนผานการโอนเงนToolStripMenuItem,
+            this.การปรบปรงขอมลสำหรบการปดกองทนToolStripMenuItem});
+            this.transactionToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transactionToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("transactionToolStripMenuItem.Image")));
+            this.transactionToolStripMenuItem.Name = "transactionToolStripMenuItem";
+            this.transactionToolStripMenuItem.Size = new System.Drawing.Size(102, 21);
+            this.transactionToolStripMenuItem.Text = "Transaction";
+            // 
+            // ขอมลNAVตอหนวยของกองทนToolStripMenuItem
+            // 
+            this.ขอมลNAVตอหนวยของกองทนToolStripMenuItem.Name = "ขอมลNAVตอหนวยของกองทนToolStripMenuItem";
+            this.ขอมลNAVตอหนวยของกองทนToolStripMenuItem.Size = new System.Drawing.Size(299, 22);
+            this.ขอมลNAVตอหนวยของกองทนToolStripMenuItem.Text = "ข้อมูล NAV ต่อหน่วยของกองทุน";
+            // 
+            // รายการสะสมเงนฝากและจายคนเขาระบบToolStripMenuItem
+            // 
+            this.รายการสะสมเงนฝากและจายคนเขาระบบToolStripMenuItem.Name = "รายการสะสมเงนฝากและจายคนเขาระบบToolStripMenuItem";
+            this.รายการสะสมเงนฝากและจายคนเขาระบบToolStripMenuItem.Size = new System.Drawing.Size(299, 22);
+            this.รายการสะสมเงนฝากและจายคนเขาระบบToolStripMenuItem.Text = "รายการสะสมเงินฝาก และจ่ายคืนเข้าระบบ";
+            // 
+            // รายการสะสมเงนฝากและจายคนแบบกลมToolStripMenuItem
+            // 
+            this.รายการสะสมเงนฝากและจายคนแบบกลมToolStripMenuItem.Name = "รายการสะสมเงนฝากและจายคนแบบกลมToolStripMenuItem";
+            this.รายการสะสมเงนฝากและจายคนแบบกลมToolStripMenuItem.Size = new System.Drawing.Size(299, 22);
+            this.รายการสะสมเงนฝากและจายคนแบบกลมToolStripMenuItem.Text = "รายการสะสมเงินฝาก และจ่ายคืนแบบกลุ่ม";
+            // 
+            // รายการสะสมเงนฝากและจายคนแบบรายบคคลToolStripMenuItem
+            // 
+            this.รายการสะสมเงนฝากและจายคนแบบรายบคคลToolStripMenuItem.Name = "รายการสะสมเงนฝากและจายคนแบบรายบคคลToolStripMenuItem";
+            this.รายการสะสมเงนฝากและจายคนแบบรายบคคลToolStripMenuItem.Size = new System.Drawing.Size(299, 22);
+            this.รายการสะสมเงนฝากและจายคนแบบรายบคคลToolStripMenuItem.Text = "รายการสะสมเงินฝาก และจ่ายคืนแบบรายบุคคล";
+            // 
+            // การจดสรรหนวยลงทนToolStripMenuItem
+            // 
+            this.การจดสรรหนวยลงทนToolStripMenuItem.Name = "การจดสรรหนวยลงทนToolStripMenuItem";
+            this.การจดสรรหนวยลงทนToolStripMenuItem.Size = new System.Drawing.Size(299, 22);
+            this.การจดสรรหนวยลงทนToolStripMenuItem.Text = "การจัดสรรหน่วยลงทุน";
+            // 
+            // การเตรยมรายการจายเงนคนผานเชคToolStripMenuItem
+            // 
+            this.การเตรยมรายการจายเงนคนผานเชคToolStripMenuItem.Name = "การเตรยมรายการจายเงนคนผานเชคToolStripMenuItem";
+            this.การเตรยมรายการจายเงนคนผานเชคToolStripMenuItem.Size = new System.Drawing.Size(299, 22);
+            this.การเตรยมรายการจายเงนคนผานเชคToolStripMenuItem.Text = "การเตรียมรายการจ่ายเงินคืนผ่านเช็ค";
+            // 
+            // การเตรยมรายการจายเงนคนผานการโอนเงนToolStripMenuItem
+            // 
+            this.การเตรยมรายการจายเงนคนผานการโอนเงนToolStripMenuItem.Name = "การเตรยมรายการจายเงนคนผานการโอนเงนToolStripMenuItem";
+            this.การเตรยมรายการจายเงนคนผานการโอนเงนToolStripMenuItem.Size = new System.Drawing.Size(299, 22);
+            this.การเตรยมรายการจายเงนคนผานการโอนเงนToolStripMenuItem.Text = "การเตรียมรายการจ่ายเงินคืนผ่านการโอนเงิน";
+            // 
+            // การปรบปรงขอมลสำหรบการปดกองทนToolStripMenuItem
+            // 
+            this.การปรบปรงขอมลสำหรบการปดกองทนToolStripMenuItem.Name = "การปรบปรงขอมลสำหรบการปดกองทนToolStripMenuItem";
+            this.การปรบปรงขอมลสำหรบการปดกองทนToolStripMenuItem.Size = new System.Drawing.Size(299, 22);
+            this.การปรบปรงขอมลสำหรบการปดกองทนToolStripMenuItem.Text = "การปรับปรุงข้อมูลสำหรับการปิดกองทุน";
+            // 
+            // reportToolStripMenuItem
+            // 
+            this.reportToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reportToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("reportToolStripMenuItem.Image")));
+            this.reportToolStripMenuItem.Name = "reportToolStripMenuItem";
+            this.reportToolStripMenuItem.Size = new System.Drawing.Size(76, 21);
+            this.reportToolStripMenuItem.Text = "Report";
+            // 
+            // languageToolStripMenuItem
+            // 
+            this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.thaiToolStripMenuItem,
+            this.englishToolStripMenuItem});
+            this.languageToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.languageToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("languageToolStripMenuItem.Image")));
+            this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
+            this.languageToolStripMenuItem.Size = new System.Drawing.Size(93, 21);
+            this.languageToolStripMenuItem.Text = "Language";
+            // 
+            // thaiToolStripMenuItem
+            // 
+            this.thaiToolStripMenuItem.Name = "thaiToolStripMenuItem";
+            this.thaiToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.thaiToolStripMenuItem.Text = "Thai";
+            // 
+            // englishToolStripMenuItem
+            // 
+            this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
+            this.englishToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.englishToolStripMenuItem.Text = "English";
             // 
             // Form20
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(544, 432);
+            this.ClientSize = new System.Drawing.Size(984, 661);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.pnlData);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btncancel);
+            this.MinimumSize = new System.Drawing.Size(1000, 700);
             this.Name = "Form20";
             this.Text = "Form20";
             this.pnlData.ResumeLayout(false);
             this.pnlData.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -333,5 +547,27 @@
         private System.Windows.Forms.TextBox nameEndList;
         private System.Windows.Forms.TextBox unitList;
         private System.Windows.Forms.TextBox moneyList;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem masterToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ขอมลแผนกToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ขอมลตำแหนงToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem employeeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ขอมลพนกงานToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ขอมลกองทนToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem เงอนไขการสะสมเงนฝากToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem เงอนไขการจายเงนคนToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem transactionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ขอมลNAVตอหนวยของกองทนToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem รายการสะสมเงนฝากและจายคนเขาระบบToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem รายการสะสมเงนฝากและจายคนแบบกลมToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem รายการสะสมเงนฝากและจายคนแบบรายบคคลToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem การจดสรรหนวยลงทนToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem การเตรยมรายการจายเงนคนผานเชคToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem การเตรยมรายการจายเงนคนผานการโอนเงนToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem การปรบปรงขอมลสำหรบการปดกองทนToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reportToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem languageToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem thaiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
     }
 }

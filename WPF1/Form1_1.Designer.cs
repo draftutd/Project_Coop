@@ -39,6 +39,7 @@
             // 
             // btnSave
             // 
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.btnSave.Location = new System.Drawing.Point(35, 22);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(84, 33);
@@ -48,6 +49,7 @@
             // 
             // btncancel
             // 
+            this.btncancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.btncancel.Location = new System.Drawing.Point(125, 22);
             this.btncancel.Name = "btncancel";
             this.btncancel.Size = new System.Drawing.Size(84, 33);
@@ -66,15 +68,16 @@
             this.pnlData.Controls.Add(this.file);
             this.pnlData.Location = new System.Drawing.Point(17, 69);
             this.pnlData.Name = "pnlData";
-            this.pnlData.Size = new System.Drawing.Size(407, 108);
+            this.pnlData.Size = new System.Drawing.Size(483, 123);
             this.pnlData.TabIndex = 1;
             // 
             // btnAdd
             // 
             this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAdd.Location = new System.Drawing.Point(306, 39);
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btnAdd.Location = new System.Drawing.Point(398, 54);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(70, 20);
+            this.btnAdd.Size = new System.Drawing.Size(70, 26);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "เลือกไฟล์";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -83,18 +86,20 @@
             // 
             this.positionList.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.positionList.Location = new System.Drawing.Point(60, 39);
+            this.positionList.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.positionList.Location = new System.Drawing.Point(17, 54);
             this.positionList.Name = "positionList";
-            this.positionList.Size = new System.Drawing.Size(228, 20);
+            this.positionList.Size = new System.Drawing.Size(352, 26);
             this.positionList.TabIndex = 9;
             this.positionList.Text = " กรุณาเลือกไฟล์";
             // 
             // file
             // 
             this.file.AutoSize = true;
-            this.file.Location = new System.Drawing.Point(14, 42);
+            this.file.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.file.Location = new System.Drawing.Point(13, 17);
             this.file.Name = "file";
-            this.file.Size = new System.Drawing.Size(40, 13);
+            this.file.Size = new System.Drawing.Size(51, 20);
             this.file.TabIndex = 0;
             this.file.Text = "ชื่อไฟล์";
             // 
@@ -102,12 +107,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(456, 202);
+            this.ClientSize = new System.Drawing.Size(532, 217);
             this.Controls.Add(this.pnlData);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btncancel);
             this.Name = "Form1_1";
-            this.Text = "Form6";
+            this.Text = "Form1_1";
             this.Load += new System.EventHandler(this.Form1_1_Load);
             this.pnlData.ResumeLayout(false);
             this.pnlData.PerformLayout();
