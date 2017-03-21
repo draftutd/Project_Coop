@@ -17,7 +17,7 @@ namespace WPF1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form21());
+            Application.Run(new Main());
         }
     }
 }

@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Master\MasterObject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\MasterObject.Designer.cs">
+      <DependentUpon>MasterObject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\MasterPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\MasterPopup.Designer.cs">
+      <DependentUpon>MasterPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\MasterList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\MasterList.Designer.cs">
+      <DependentUpon>MasterList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form19.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,11 +130,11 @@
     <Compile Include="Form11.Designer.cs">
       <DependentUpon>Form11.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form21.cs">
+    <Compile Include="Securities\Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form21.Designer.cs">
-      <DependentUpon>Form21.cs</DependentUpon>
+    <Compile Include="Securities\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Form9.cs">
       <SubType>Form</SubType>
@@ -136,50 +154,59 @@
     <Compile Include="Form7.Designer.cs">
       <DependentUpon>Form7.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form5.cs">
+    <Compile Include="Master\PositionList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form5.Designer.cs">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <Compile Include="Master\PositionList.Designer.cs">
+      <DependentUpon>PositionList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1_1.cs">
+    <Compile Include="Employee\EmployeePopup.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1_1.Designer.cs">
-      <DependentUpon>Form1_1.cs</DependentUpon>
+    <Compile Include="Employee\EmployeePopup.Designer.cs">
+      <DependentUpon>EmployeePopup.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form6.cs">
+    <Compile Include="Master\PositionObject.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form6.Designer.cs">
-      <DependentUpon>Form6.cs</DependentUpon>
+    <Compile Include="Master\PositionObject.Designer.cs">
+      <DependentUpon>PositionObject.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form4.cs">
+    <Compile Include="Master\BranchObject.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="Master\BranchObject.Designer.cs">
+      <DependentUpon>BranchObject.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
+    <Compile Include="Master\BranchList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="Master\BranchList.Designer.cs">
+      <DependentUpon>BranchList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Employee\EmployeeList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Employee\EmployeeList.Designer.cs">
+      <DependentUpon>EmployeeList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="Employee\EmployeeObject.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="Employee\EmployeeObject.Designer.cs">
+      <DependentUpon>EmployeeObject.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Master\MasterObject.resx">
+      <DependentUpon>MasterObject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\MasterPopup.resx">
+      <DependentUpon>MasterPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\MasterList.resx">
+      <DependentUpon>MasterList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form19.resx">
       <DependentUpon>Form19.cs</DependentUpon>
     </EmbeddedResource>
@@ -213,8 +240,8 @@
     <EmbeddedResource Include="Form11.resx">
       <DependentUpon>Form11.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form21.resx">
-      <DependentUpon>Form21.cs</DependentUpon>
+    <EmbeddedResource Include="Securities\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form9.resx">
       <DependentUpon>Form9.cs</DependentUpon>
@@ -225,26 +252,26 @@
     <EmbeddedResource Include="Form7.resx">
       <DependentUpon>Form7.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form5.resx">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <EmbeddedResource Include="Master\PositionList.resx">
+      <DependentUpon>PositionList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1_1.resx">
-      <DependentUpon>Form1_1.cs</DependentUpon>
+    <EmbeddedResource Include="Employee\EmployeePopup.resx">
+      <DependentUpon>EmployeePopup.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form6.resx">
-      <DependentUpon>Form6.cs</DependentUpon>
+    <EmbeddedResource Include="Master\PositionObject.resx">
+      <DependentUpon>PositionObject.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <EmbeddedResource Include="Master\BranchObject.resx">
+      <DependentUpon>BranchObject.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="Master\BranchList.resx">
+      <DependentUpon>BranchList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Employee\EmployeeList.resx">
+      <DependentUpon>EmployeeList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="Employee\EmployeeObject.resx">
+      <DependentUpon>EmployeeObject.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -267,6 +294,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Fund\" />
+    <Folder Include="Report\" />
+    <Folder Include="Transaction\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
