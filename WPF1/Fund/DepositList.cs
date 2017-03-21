@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WPF1
 {
-    public partial class Form17 : Form
+    public partial class DepositList : Form
     {
-        public Form17()
+        public DepositList()
         {
             InitializeComponent();
         }

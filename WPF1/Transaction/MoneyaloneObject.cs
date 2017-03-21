@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WPF1
 {
-    public partial class Form16 : Form
+    public partial class MoneyaloneObject : Form
     {
-        public Form16()
+        public MoneyaloneObject()
         {
             InitializeComponent();
         }

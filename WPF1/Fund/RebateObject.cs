@@ -10,12 +10,16 @@ using System.Windows.Forms;
 
 namespace WPF1
 {
-    public partial class Form18 : Form
+    public partial class RebateObject : Form
     {
-        public Form18()
+        public RebateObject()
         {
             InitializeComponent();
         }
 
+        private void pnlData_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -10,16 +10,12 @@ using System.Windows.Forms;
 
 namespace WPF1
 {
-    public partial class Form7 : Form
+    public partial class ReserveObject : Form
     {
-        public Form7()
+        public ReserveObject()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

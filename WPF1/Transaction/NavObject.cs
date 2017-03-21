@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WPF1
 {
-    public partial class Form10 : Form
+    public partial class NavObject : Form
     {
-        public Form10()
+        public NavObject()
         {
             InitializeComponent();
         }

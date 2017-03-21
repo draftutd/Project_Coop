@@ -10,12 +10,13 @@ using System.Windows.Forms;
 
 namespace WPF1
 {
-    public partial class Form20 : Form
+    public partial class ReserveList : Form
     {
-        public Form20()
+        public ReserveList()
         {
             InitializeComponent();
         }
 
+      
     }
 }

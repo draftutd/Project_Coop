@@ -64,71 +64,71 @@
     <Compile Include="Master\MasterList.Designer.cs">
       <DependentUpon>MasterList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form19.cs">
+    <Compile Include="Transaction\MoneygroupList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form19.Designer.cs">
-      <DependentUpon>Form19.cs</DependentUpon>
+    <Compile Include="Transaction\MoneygroupList.Designer.cs">
+      <DependentUpon>MoneygroupList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form17.cs">
+    <Compile Include="Transaction\MoneyaloneList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form17.Designer.cs">
-      <DependentUpon>Form17.cs</DependentUpon>
+    <Compile Include="Transaction\MoneyaloneList.Designer.cs">
+      <DependentUpon>MoneyaloneList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form15.cs">
+    <Compile Include="Transaction\ReserveList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form15.Designer.cs">
-      <DependentUpon>Form15.cs</DependentUpon>
+    <Compile Include="Transaction\ReserveList.Designer.cs">
+      <DependentUpon>ReserveList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form13.cs">
+    <Compile Include="Transaction\NavList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form13.Designer.cs">
-      <DependentUpon>Form13.cs</DependentUpon>
+    <Compile Include="Transaction\NavList.Designer.cs">
+      <DependentUpon>NavList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form12.cs">
+    <Compile Include="Fund\RebateObject.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form12.Designer.cs">
-      <DependentUpon>Form12.cs</DependentUpon>
+    <Compile Include="Fund\RebateObject.Designer.cs">
+      <DependentUpon>RebateObject.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form20.cs">
+    <Compile Include="Transaction\MoneygroupObject.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form20.Designer.cs">
-      <DependentUpon>Form20.cs</DependentUpon>
+    <Compile Include="Transaction\MoneygroupObject.Designer.cs">
+      <DependentUpon>MoneygroupObject.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form18.cs">
+    <Compile Include="Transaction\MoneyaloneObject.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form18.Designer.cs">
-      <DependentUpon>Form18.cs</DependentUpon>
+    <Compile Include="Transaction\MoneyaloneObject.Designer.cs">
+      <DependentUpon>MoneyaloneObject.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form16.cs">
+    <Compile Include="Transaction\ReserveObject.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form16.Designer.cs">
-      <DependentUpon>Form16.cs</DependentUpon>
+    <Compile Include="Transaction\ReserveObject.Designer.cs">
+      <DependentUpon>ReserveObject.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form14.cs">
+    <Compile Include="Transaction\NavObject.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form14.Designer.cs">
-      <DependentUpon>Form14.cs</DependentUpon>
+    <Compile Include="Transaction\NavObject.Designer.cs">
+      <DependentUpon>NavObject.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form10.cs">
+    <Compile Include="Fund\DepositObject.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form10.Designer.cs">
-      <DependentUpon>Form10.cs</DependentUpon>
+    <Compile Include="Fund\DepositObject.Designer.cs">
+      <DependentUpon>DepositObject.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form11.cs">
+    <Compile Include="Fund\RebateList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form11.Designer.cs">
-      <DependentUpon>Form11.cs</DependentUpon>
+    <Compile Include="Fund\RebateList.Designer.cs">
+      <DependentUpon>RebateList.cs</DependentUpon>
     </Compile>
     <Compile Include="Securities\Main.cs">
       <SubType>Form</SubType>
@@ -136,23 +136,23 @@
     <Compile Include="Securities\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form9.cs">
+    <Compile Include="Fund\DepositList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form9.Designer.cs">
-      <DependentUpon>Form9.cs</DependentUpon>
+    <Compile Include="Fund\DepositList.Designer.cs">
+      <DependentUpon>DepositList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form8.cs">
+    <Compile Include="Fund\FundObject.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form8.Designer.cs">
-      <DependentUpon>Form8.cs</DependentUpon>
+    <Compile Include="Fund\FundObject.Designer.cs">
+      <DependentUpon>FundObject.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form7.cs">
+    <Compile Include="Fund\FundList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form7.Designer.cs">
-      <DependentUpon>Form7.cs</DependentUpon>
+    <Compile Include="Fund\FundList.Designer.cs">
+      <DependentUpon>FundList.cs</DependentUpon>
     </Compile>
     <Compile Include="Master\PositionList.cs">
       <SubType>Form</SubType>
@@ -207,50 +207,50 @@
     <EmbeddedResource Include="Master\MasterList.resx">
       <DependentUpon>MasterList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form19.resx">
-      <DependentUpon>Form19.cs</DependentUpon>
+    <EmbeddedResource Include="Transaction\MoneygroupList.resx">
+      <DependentUpon>MoneygroupList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form17.resx">
-      <DependentUpon>Form17.cs</DependentUpon>
+    <EmbeddedResource Include="Transaction\MoneyaloneList.resx">
+      <DependentUpon>MoneyaloneList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form15.resx">
-      <DependentUpon>Form15.cs</DependentUpon>
+    <EmbeddedResource Include="Transaction\ReserveList.resx">
+      <DependentUpon>ReserveList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form13.resx">
-      <DependentUpon>Form13.cs</DependentUpon>
+    <EmbeddedResource Include="Transaction\NavList.resx">
+      <DependentUpon>NavList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form12.resx">
-      <DependentUpon>Form12.cs</DependentUpon>
+    <EmbeddedResource Include="Fund\RebateObject.resx">
+      <DependentUpon>RebateObject.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form20.resx">
-      <DependentUpon>Form20.cs</DependentUpon>
+    <EmbeddedResource Include="Transaction\MoneygroupObject.resx">
+      <DependentUpon>MoneygroupObject.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form18.resx">
-      <DependentUpon>Form18.cs</DependentUpon>
+    <EmbeddedResource Include="Transaction\MoneyaloneObject.resx">
+      <DependentUpon>MoneyaloneObject.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form16.resx">
-      <DependentUpon>Form16.cs</DependentUpon>
+    <EmbeddedResource Include="Transaction\ReserveObject.resx">
+      <DependentUpon>ReserveObject.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form14.resx">
-      <DependentUpon>Form14.cs</DependentUpon>
+    <EmbeddedResource Include="Transaction\NavObject.resx">
+      <DependentUpon>NavObject.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form10.resx">
-      <DependentUpon>Form10.cs</DependentUpon>
+    <EmbeddedResource Include="Fund\DepositObject.resx">
+      <DependentUpon>DepositObject.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form11.resx">
-      <DependentUpon>Form11.cs</DependentUpon>
+    <EmbeddedResource Include="Fund\RebateList.resx">
+      <DependentUpon>RebateList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Securities\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form9.resx">
-      <DependentUpon>Form9.cs</DependentUpon>
+    <EmbeddedResource Include="Fund\DepositList.resx">
+      <DependentUpon>DepositList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form8.resx">
-      <DependentUpon>Form8.cs</DependentUpon>
+    <EmbeddedResource Include="Fund\FundObject.resx">
+      <DependentUpon>FundObject.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form7.resx">
-      <DependentUpon>Form7.cs</DependentUpon>
+    <EmbeddedResource Include="Fund\FundList.resx">
+      <DependentUpon>FundList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Master\PositionList.resx">
       <DependentUpon>PositionList.cs</DependentUpon>
@@ -296,9 +296,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Fund\" />
     <Folder Include="Report\" />
-    <Folder Include="Transaction\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

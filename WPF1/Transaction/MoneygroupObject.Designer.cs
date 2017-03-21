@@ -1,6 +1,6 @@
 ﻿namespace WPF1
 {
-    partial class Form20
+    partial class MoneygroupObject
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btncancel = new System.Windows.Forms.Button();
-            this.pnlData = new System.Windows.Forms.Panel();
             this.refer = new System.Windows.Forms.Label();
             this.nameEnd = new System.Windows.Forms.Label();
             this.unit = new System.Windows.Forms.Label();
@@ -53,65 +50,13 @@
             this.category = new System.Windows.Forms.Label();
             this.companyList = new System.Windows.Forms.ComboBox();
             this.company = new System.Windows.Forms.Label();
-            this.pnlData.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnSave
-            // 
-            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btnSave.Location = new System.Drawing.Point(38, 53);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(84, 33);
-            this.btnSave.TabIndex = 0;
-            this.btnSave.Text = "บันทึก";
-            this.btnSave.UseVisualStyleBackColor = true;
-            // 
-            // btncancel
-            // 
-            this.btncancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btncancel.Location = new System.Drawing.Point(128, 53);
-            this.btncancel.Name = "btncancel";
-            this.btncancel.Size = new System.Drawing.Size(84, 33);
-            this.btncancel.TabIndex = 0;
-            this.btncancel.Text = "ยกเลิก";
-            this.btncancel.UseVisualStyleBackColor = true;
-            // 
-            // pnlData
-            // 
-            this.pnlData.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlData.Controls.Add(this.refer);
-            this.pnlData.Controls.Add(this.nameEnd);
-            this.pnlData.Controls.Add(this.unit);
-            this.pnlData.Controls.Add(this.money);
-            this.pnlData.Controls.Add(this.referList);
-            this.pnlData.Controls.Add(this.nameEndList);
-            this.pnlData.Controls.Add(this.unitList);
-            this.pnlData.Controls.Add(this.moneyList);
-            this.pnlData.Controls.Add(this.fundList);
-            this.pnlData.Controls.Add(this.fund);
-            this.pnlData.Controls.Add(this.codeEmpList);
-            this.pnlData.Controls.Add(this.codeEmp);
-            this.pnlData.Controls.Add(this.dateList);
-            this.pnlData.Controls.Add(this.categoryList);
-            this.pnlData.Controls.Add(this.date);
-            this.pnlData.Controls.Add(this.transaction2List);
-            this.pnlData.Controls.Add(this.transaction2);
-            this.pnlData.Controls.Add(this.transaction1List);
-            this.pnlData.Controls.Add(this.transaction1);
-            this.pnlData.Controls.Add(this.category);
-            this.pnlData.Controls.Add(this.companyList);
-            this.pnlData.Controls.Add(this.company);
-            this.pnlData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.pnlData.Location = new System.Drawing.Point(12, 100);
-            this.pnlData.Name = "pnlData";
-            this.pnlData.Size = new System.Drawing.Size(960, 312);
-            this.pnlData.TabIndex = 1;
             // 
             // refer
             // 
             this.refer.AutoSize = true;
             this.refer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.refer.Location = new System.Drawing.Point(32, 236);
+            this.refer.Location = new System.Drawing.Point(28, 227);
             this.refer.Name = "refer";
             this.refer.Size = new System.Drawing.Size(69, 20);
             this.refer.TabIndex = 29;
@@ -121,7 +66,7 @@
             // 
             this.nameEnd.AutoSize = true;
             this.nameEnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.nameEnd.Location = new System.Drawing.Point(512, 194);
+            this.nameEnd.Location = new System.Drawing.Point(508, 185);
             this.nameEnd.Name = "nameEnd";
             this.nameEnd.Size = new System.Drawing.Size(140, 20);
             this.nameEnd.TabIndex = 28;
@@ -131,7 +76,7 @@
             // 
             this.unit.AutoSize = true;
             this.unit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.unit.Location = new System.Drawing.Point(32, 194);
+            this.unit.Location = new System.Drawing.Point(28, 185);
             this.unit.Name = "unit";
             this.unit.Size = new System.Drawing.Size(82, 20);
             this.unit.TabIndex = 27;
@@ -141,7 +86,7 @@
             // 
             this.money.AutoSize = true;
             this.money.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.money.Location = new System.Drawing.Point(512, 153);
+            this.money.Location = new System.Drawing.Point(508, 144);
             this.money.Name = "money";
             this.money.Size = new System.Drawing.Size(71, 20);
             this.money.TabIndex = 26;
@@ -149,38 +94,38 @@
             // 
             // referList
             // 
-            this.referList.Location = new System.Drawing.Point(228, 236);
+            this.referList.Location = new System.Drawing.Point(224, 227);
             this.referList.Name = "referList";
-            this.referList.Size = new System.Drawing.Size(246, 22);
+            this.referList.Size = new System.Drawing.Size(246, 20);
             this.referList.TabIndex = 25;
             // 
             // nameEndList
             // 
-            this.nameEndList.Location = new System.Drawing.Point(679, 191);
+            this.nameEndList.Location = new System.Drawing.Point(675, 182);
             this.nameEndList.Name = "nameEndList";
-            this.nameEndList.Size = new System.Drawing.Size(246, 22);
+            this.nameEndList.Size = new System.Drawing.Size(246, 20);
             this.nameEndList.TabIndex = 24;
             // 
             // unitList
             // 
-            this.unitList.Location = new System.Drawing.Point(228, 194);
+            this.unitList.Location = new System.Drawing.Point(224, 185);
             this.unitList.Name = "unitList";
-            this.unitList.Size = new System.Drawing.Size(246, 22);
+            this.unitList.Size = new System.Drawing.Size(246, 20);
             this.unitList.TabIndex = 23;
             // 
             // moneyList
             // 
-            this.moneyList.Location = new System.Drawing.Point(679, 153);
+            this.moneyList.Location = new System.Drawing.Point(675, 144);
             this.moneyList.Name = "moneyList";
-            this.moneyList.Size = new System.Drawing.Size(246, 22);
+            this.moneyList.Size = new System.Drawing.Size(246, 20);
             this.moneyList.TabIndex = 22;
             // 
             // fundList
             // 
             this.fundList.FormattingEnabled = true;
-            this.fundList.Location = new System.Drawing.Point(228, 69);
+            this.fundList.Location = new System.Drawing.Point(224, 60);
             this.fundList.Name = "fundList";
-            this.fundList.Size = new System.Drawing.Size(246, 24);
+            this.fundList.Size = new System.Drawing.Size(246, 21);
             this.fundList.TabIndex = 21;
             this.fundList.Text = "ระบุเลือกกองทุน";
             // 
@@ -188,7 +133,7 @@
             // 
             this.fund.AutoSize = true;
             this.fund.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.fund.Location = new System.Drawing.Point(32, 69);
+            this.fund.Location = new System.Drawing.Point(28, 60);
             this.fund.Name = "fund";
             this.fund.Size = new System.Drawing.Size(52, 20);
             this.fund.TabIndex = 20;
@@ -196,16 +141,16 @@
             // 
             // codeEmpList
             // 
-            this.codeEmpList.Location = new System.Drawing.Point(679, 30);
+            this.codeEmpList.Location = new System.Drawing.Point(675, 21);
             this.codeEmpList.Name = "codeEmpList";
-            this.codeEmpList.Size = new System.Drawing.Size(246, 22);
+            this.codeEmpList.Size = new System.Drawing.Size(246, 20);
             this.codeEmpList.TabIndex = 13;
             // 
             // codeEmp
             // 
             this.codeEmp.AutoSize = true;
             this.codeEmp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.codeEmp.Location = new System.Drawing.Point(512, 30);
+            this.codeEmp.Location = new System.Drawing.Point(508, 21);
             this.codeEmp.Name = "codeEmp";
             this.codeEmp.Size = new System.Drawing.Size(84, 20);
             this.codeEmp.TabIndex = 12;
@@ -213,9 +158,9 @@
             // 
             // dateList
             // 
-            this.dateList.Location = new System.Drawing.Point(228, 154);
+            this.dateList.Location = new System.Drawing.Point(224, 145);
             this.dateList.Name = "dateList";
-            this.dateList.Size = new System.Drawing.Size(246, 22);
+            this.dateList.Size = new System.Drawing.Size(246, 20);
             this.dateList.TabIndex = 11;
             // 
             // categoryList
@@ -225,9 +170,9 @@
             " Buy",
             " Sell",
             " Transfer"});
-            this.categoryList.Location = new System.Drawing.Point(679, 69);
+            this.categoryList.Location = new System.Drawing.Point(675, 60);
             this.categoryList.Name = "categoryList";
-            this.categoryList.Size = new System.Drawing.Size(246, 24);
+            this.categoryList.Size = new System.Drawing.Size(246, 21);
             this.categoryList.TabIndex = 10;
             this.categoryList.Text = " Buy";
             // 
@@ -235,7 +180,7 @@
             // 
             this.date.AutoSize = true;
             this.date.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.date.Location = new System.Drawing.Point(32, 156);
+            this.date.Location = new System.Drawing.Point(28, 147);
             this.date.Name = "date";
             this.date.Size = new System.Drawing.Size(117, 20);
             this.date.TabIndex = 8;
@@ -243,16 +188,16 @@
             // 
             // transaction2List
             // 
-            this.transaction2List.Location = new System.Drawing.Point(679, 111);
+            this.transaction2List.Location = new System.Drawing.Point(675, 102);
             this.transaction2List.Name = "transaction2List";
-            this.transaction2List.Size = new System.Drawing.Size(246, 22);
+            this.transaction2List.Size = new System.Drawing.Size(246, 20);
             this.transaction2List.TabIndex = 7;
             // 
             // transaction2
             // 
             this.transaction2.AutoSize = true;
             this.transaction2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.transaction2.Location = new System.Drawing.Point(512, 113);
+            this.transaction2.Location = new System.Drawing.Point(508, 104);
             this.transaction2.Name = "transaction2";
             this.transaction2.Size = new System.Drawing.Size(163, 20);
             this.transaction2.TabIndex = 6;
@@ -260,16 +205,16 @@
             // 
             // transaction1List
             // 
-            this.transaction1List.Location = new System.Drawing.Point(228, 112);
+            this.transaction1List.Location = new System.Drawing.Point(224, 103);
             this.transaction1List.Name = "transaction1List";
-            this.transaction1List.Size = new System.Drawing.Size(246, 22);
+            this.transaction1List.Size = new System.Drawing.Size(246, 20);
             this.transaction1List.TabIndex = 5;
             // 
             // transaction1
             // 
             this.transaction1.AutoSize = true;
             this.transaction1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.transaction1.Location = new System.Drawing.Point(32, 113);
+            this.transaction1.Location = new System.Drawing.Point(28, 104);
             this.transaction1.Name = "transaction1";
             this.transaction1.Size = new System.Drawing.Size(181, 20);
             this.transaction1.TabIndex = 4;
@@ -279,7 +224,7 @@
             // 
             this.category.AutoSize = true;
             this.category.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.category.Location = new System.Drawing.Point(512, 69);
+            this.category.Location = new System.Drawing.Point(508, 60);
             this.category.Name = "category";
             this.category.Size = new System.Drawing.Size(122, 20);
             this.category.TabIndex = 2;
@@ -288,9 +233,9 @@
             // companyList
             // 
             this.companyList.FormattingEnabled = true;
-            this.companyList.Location = new System.Drawing.Point(228, 27);
+            this.companyList.Location = new System.Drawing.Point(224, 18);
             this.companyList.Name = "companyList";
-            this.companyList.Size = new System.Drawing.Size(246, 24);
+            this.companyList.Size = new System.Drawing.Size(246, 21);
             this.companyList.TabIndex = 1;
             this.companyList.Text = " ระบุเลือกบริษัท";
             // 
@@ -298,34 +243,48 @@
             // 
             this.company.AutoSize = true;
             this.company.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.company.Location = new System.Drawing.Point(32, 27);
+            this.company.Location = new System.Drawing.Point(28, 18);
             this.company.Name = "company";
             this.company.Size = new System.Drawing.Size(95, 20);
             this.company.TabIndex = 0;
             this.company.Text = "บริษัทต้นสังกัด";
             // 
-            // Form20
+            // MoneygroupObject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 661);
-            this.Controls.Add(this.pnlData);
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.btncancel);
+            this.Controls.Add(this.refer);
+            this.Controls.Add(this.nameEnd);
+            this.Controls.Add(this.company);
+            this.Controls.Add(this.unit);
+            this.Controls.Add(this.companyList);
+            this.Controls.Add(this.money);
+            this.Controls.Add(this.category);
+            this.Controls.Add(this.referList);
+            this.Controls.Add(this.transaction1);
+            this.Controls.Add(this.nameEndList);
+            this.Controls.Add(this.transaction1List);
+            this.Controls.Add(this.unitList);
+            this.Controls.Add(this.transaction2);
+            this.Controls.Add(this.moneyList);
+            this.Controls.Add(this.transaction2List);
+            this.Controls.Add(this.fundList);
+            this.Controls.Add(this.date);
+            this.Controls.Add(this.fund);
+            this.Controls.Add(this.categoryList);
+            this.Controls.Add(this.codeEmpList);
+            this.Controls.Add(this.dateList);
+            this.Controls.Add(this.codeEmp);
             this.MinimumSize = new System.Drawing.Size(1000, 700);
-            this.Name = "Form20";
-            this.Text = "Form20";
-            this.pnlData.ResumeLayout(false);
-            this.pnlData.PerformLayout();
+            this.Name = "MoneygroupObject";
+            this.Text = "MoneygroupObject";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Button btncancel;
-        private System.Windows.Forms.Panel pnlData;
         private System.Windows.Forms.Label company;
         private System.Windows.Forms.ComboBox companyList;
         private System.Windows.Forms.Label category;

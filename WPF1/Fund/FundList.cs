@@ -10,13 +10,16 @@ using System.Windows.Forms;
 
 namespace WPF1
 {
-    public partial class Form19 : Form
+    public partial class FundList : Form
     {
-        public Form19()
+        public FundList()
         {
             InitializeComponent();
         }
 
-      
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

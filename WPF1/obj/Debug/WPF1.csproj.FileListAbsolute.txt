@@ -28,3 +28,6 @@ C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\obj\Debug\WPF1.Form18.resources
 C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\obj\Debug\WPF1.Form19.resources
 C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\obj\Debug\WPF1.Form20.resources
 C:\Users\admin\Desktop\DR\Project\WPF1\WPF1\obj\Debug\WPF1.Form21.resources
+C:\cygwin64\home\Peerapong\Project_Coop\WPF1\bin\Debug\WPF1.exe.config
+C:\cygwin64\home\Peerapong\Project_Coop\WPF1\obj\Debug\WPF1.exe
+C:\cygwin64\home\Peerapong\Project_Coop\WPF1\obj\Debug\WPF1.pdb

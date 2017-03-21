@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WPF1
 {
-    public partial class Form11 : Form
+    public partial class RebateList : Form
     {
-        public Form11()
+        public RebateList()
         {
             InitializeComponent();
         }

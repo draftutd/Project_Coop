@@ -10,16 +10,13 @@ using System.Windows.Forms;
 
 namespace WPF1
 {
-    public partial class Form12 : Form
+    public partial class MoneyaloneList : Form
     {
-        public Form12()
+        public MoneyaloneList()
         {
             InitializeComponent();
         }
 
-        private void pnlData_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+      
     }
 }
