@@ -46,231 +46,232 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Master\MasterObject.cs">
+    <Compile Include="Master\UI\MasterObject.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Master\MasterObject.Designer.cs">
+    <Compile Include="Master\UI\MasterObject.Designer.cs">
       <DependentUpon>MasterObject.cs</DependentUpon>
     </Compile>
-    <Compile Include="Master\MasterPopup.cs">
+    <Compile Include="Master\UI\MasterPopup.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Master\MasterPopup.Designer.cs">
+    <Compile Include="Master\UI\MasterPopup.Designer.cs">
       <DependentUpon>MasterPopup.cs</DependentUpon>
     </Compile>
-    <Compile Include="Master\MasterList.cs">
+    <Compile Include="Master\UI\MasterList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Master\MasterList.Designer.cs">
+    <Compile Include="Master\UI\MasterList.Designer.cs">
       <DependentUpon>MasterList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Transaction\MoneygroupList.cs">
+    <Compile Include="System\Windows\Forms\Master.cs" />
+    <Compile Include="Transaction\UI\MoneygroupList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Transaction\MoneygroupList.Designer.cs">
+    <Compile Include="Transaction\UI\MoneygroupList.Designer.cs">
       <DependentUpon>MoneygroupList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Transaction\MoneyaloneList.cs">
+    <Compile Include="Transaction\UI\MoneyaloneList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Transaction\MoneyaloneList.Designer.cs">
+    <Compile Include="Transaction\UI\MoneyaloneList.Designer.cs">
       <DependentUpon>MoneyaloneList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Transaction\ReserveList.cs">
+    <Compile Include="Transaction\UI\ReserveList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Transaction\ReserveList.Designer.cs">
+    <Compile Include="Transaction\UI\ReserveList.Designer.cs">
       <DependentUpon>ReserveList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Transaction\NavList.cs">
+    <Compile Include="Transaction\UI\NavList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Transaction\NavList.Designer.cs">
+    <Compile Include="Transaction\UI\NavList.Designer.cs">
       <DependentUpon>NavList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Fund\RebateObject.cs">
+    <Compile Include="Fund\UI\RebateObject.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Fund\RebateObject.Designer.cs">
+    <Compile Include="Fund\UI\RebateObject.Designer.cs">
       <DependentUpon>RebateObject.cs</DependentUpon>
     </Compile>
-    <Compile Include="Transaction\MoneygroupObject.cs">
+    <Compile Include="Transaction\UI\MoneygroupObject.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Transaction\MoneygroupObject.Designer.cs">
+    <Compile Include="Transaction\UI\MoneygroupObject.Designer.cs">
       <DependentUpon>MoneygroupObject.cs</DependentUpon>
     </Compile>
-    <Compile Include="Transaction\MoneyaloneObject.cs">
+    <Compile Include="Transaction\UI\MoneyaloneObject.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Transaction\MoneyaloneObject.Designer.cs">
+    <Compile Include="Transaction\UI\MoneyaloneObject.Designer.cs">
       <DependentUpon>MoneyaloneObject.cs</DependentUpon>
     </Compile>
-    <Compile Include="Transaction\ReserveObject.cs">
+    <Compile Include="Transaction\UI\ReserveObject.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Transaction\ReserveObject.Designer.cs">
+    <Compile Include="Transaction\UI\ReserveObject.Designer.cs">
       <DependentUpon>ReserveObject.cs</DependentUpon>
     </Compile>
-    <Compile Include="Transaction\NavObject.cs">
+    <Compile Include="Transaction\UI\NavObject.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Transaction\NavObject.Designer.cs">
+    <Compile Include="Transaction\UI\NavObject.Designer.cs">
       <DependentUpon>NavObject.cs</DependentUpon>
     </Compile>
-    <Compile Include="Fund\DepositObject.cs">
+    <Compile Include="Fund\UI\DepositObject.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Fund\DepositObject.Designer.cs">
+    <Compile Include="Fund\UI\DepositObject.Designer.cs">
       <DependentUpon>DepositObject.cs</DependentUpon>
     </Compile>
-    <Compile Include="Fund\RebateList.cs">
+    <Compile Include="Fund\UI\RebateList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Fund\RebateList.Designer.cs">
+    <Compile Include="Fund\UI\RebateList.Designer.cs">
       <DependentUpon>RebateList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Securities\Main.cs">
+    <Compile Include="Securities\UI\Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Securities\Main.Designer.cs">
+    <Compile Include="Securities\UI\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="Fund\DepositList.cs">
+    <Compile Include="Fund\UI\DepositList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Fund\DepositList.Designer.cs">
+    <Compile Include="Fund\UI\DepositList.Designer.cs">
       <DependentUpon>DepositList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Fund\FundObject.cs">
+    <Compile Include="Fund\UI\FundObject.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Fund\FundObject.Designer.cs">
+    <Compile Include="Fund\UI\FundObject.Designer.cs">
       <DependentUpon>FundObject.cs</DependentUpon>
     </Compile>
-    <Compile Include="Fund\FundList.cs">
+    <Compile Include="Fund\UI\FundList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Fund\FundList.Designer.cs">
+    <Compile Include="Fund\UI\FundList.Designer.cs">
       <DependentUpon>FundList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Master\PositionList.cs">
+    <Compile Include="Company\UI\PositionList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Master\PositionList.Designer.cs">
+    <Compile Include="Company\UI\PositionList.Designer.cs">
       <DependentUpon>PositionList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Employee\EmployeePopup.cs">
+    <Compile Include="Employee\UI\EmployeePopup.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Employee\EmployeePopup.Designer.cs">
+    <Compile Include="Employee\UI\EmployeePopup.Designer.cs">
       <DependentUpon>EmployeePopup.cs</DependentUpon>
     </Compile>
-    <Compile Include="Master\PositionObject.cs">
+    <Compile Include="Company\UI\PositionObject.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Master\PositionObject.Designer.cs">
+    <Compile Include="Company\UI\PositionObject.Designer.cs">
       <DependentUpon>PositionObject.cs</DependentUpon>
     </Compile>
-    <Compile Include="Master\BranchObject.cs">
+    <Compile Include="Company\UI\BranchObject.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Master\BranchObject.Designer.cs">
+    <Compile Include="Company\UI\BranchObject.Designer.cs">
       <DependentUpon>BranchObject.cs</DependentUpon>
     </Compile>
-    <Compile Include="Master\BranchList.cs">
+    <Compile Include="Company\UI\BranchList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Master\BranchList.Designer.cs">
+    <Compile Include="Company\UI\BranchList.Designer.cs">
       <DependentUpon>BranchList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Employee\EmployeeList.cs">
+    <Compile Include="Employee\UI\EmployeeList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Employee\EmployeeList.Designer.cs">
+    <Compile Include="Employee\UI\EmployeeList.Designer.cs">
       <DependentUpon>EmployeeList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Employee\EmployeeObject.cs">
+    <Compile Include="Employee\UI\EmployeeObject.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Employee\EmployeeObject.Designer.cs">
+    <Compile Include="Employee\UI\EmployeeObject.Designer.cs">
       <DependentUpon>EmployeeObject.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Master\MasterObject.resx">
+    <EmbeddedResource Include="Master\UI\MasterObject.resx">
       <DependentUpon>MasterObject.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Master\MasterPopup.resx">
+    <EmbeddedResource Include="Master\UI\MasterPopup.resx">
       <DependentUpon>MasterPopup.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Master\MasterList.resx">
+    <EmbeddedResource Include="Master\UI\MasterList.resx">
       <DependentUpon>MasterList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Transaction\MoneygroupList.resx">
+    <EmbeddedResource Include="Transaction\UI\MoneygroupList.resx">
       <DependentUpon>MoneygroupList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Transaction\MoneyaloneList.resx">
+    <EmbeddedResource Include="Transaction\UI\MoneyaloneList.resx">
       <DependentUpon>MoneyaloneList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Transaction\ReserveList.resx">
+    <EmbeddedResource Include="Transaction\UI\ReserveList.resx">
       <DependentUpon>ReserveList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Transaction\NavList.resx">
+    <EmbeddedResource Include="Transaction\UI\NavList.resx">
       <DependentUpon>NavList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Fund\RebateObject.resx">
+    <EmbeddedResource Include="Fund\UI\RebateObject.resx">
       <DependentUpon>RebateObject.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Transaction\MoneygroupObject.resx">
+    <EmbeddedResource Include="Transaction\UI\MoneygroupObject.resx">
       <DependentUpon>MoneygroupObject.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Transaction\MoneyaloneObject.resx">
+    <EmbeddedResource Include="Transaction\UI\MoneyaloneObject.resx">
       <DependentUpon>MoneyaloneObject.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Transaction\ReserveObject.resx">
+    <EmbeddedResource Include="Transaction\UI\ReserveObject.resx">
       <DependentUpon>ReserveObject.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Transaction\NavObject.resx">
+    <EmbeddedResource Include="Transaction\UI\NavObject.resx">
       <DependentUpon>NavObject.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Fund\DepositObject.resx">
+    <EmbeddedResource Include="Fund\UI\DepositObject.resx">
       <DependentUpon>DepositObject.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Fund\RebateList.resx">
+    <EmbeddedResource Include="Fund\UI\RebateList.resx">
       <DependentUpon>RebateList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Securities\Main.resx">
+    <EmbeddedResource Include="Securities\UI\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Fund\DepositList.resx">
+    <EmbeddedResource Include="Fund\UI\DepositList.resx">
       <DependentUpon>DepositList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Fund\FundObject.resx">
+    <EmbeddedResource Include="Fund\UI\FundObject.resx">
       <DependentUpon>FundObject.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Fund\FundList.resx">
+    <EmbeddedResource Include="Fund\UI\FundList.resx">
       <DependentUpon>FundList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Master\PositionList.resx">
+    <EmbeddedResource Include="Company\UI\PositionList.resx">
       <DependentUpon>PositionList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Employee\EmployeePopup.resx">
+    <EmbeddedResource Include="Employee\UI\EmployeePopup.resx">
       <DependentUpon>EmployeePopup.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Master\PositionObject.resx">
+    <EmbeddedResource Include="Company\UI\PositionObject.resx">
       <DependentUpon>PositionObject.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Master\BranchObject.resx">
+    <EmbeddedResource Include="Company\UI\BranchObject.resx">
       <DependentUpon>BranchObject.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Master\BranchList.resx">
+    <EmbeddedResource Include="Company\UI\BranchList.resx">
       <DependentUpon>BranchList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Employee\EmployeeList.resx">
+    <EmbeddedResource Include="Employee\UI\EmployeeList.resx">
       <DependentUpon>EmployeeList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Employee\EmployeeObject.resx">
+    <EmbeddedResource Include="Employee\UI\EmployeeObject.resx">
       <DependentUpon>EmployeeObject.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
