@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
-namespace WPF1
+namespace WPF1.Securities.UI
 {
     static class Program
     {
@@ -17,7 +17,7 @@ namespace WPF1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Main());
+            Application.Run(new Securities.UI.Login());
         }
     }
 }

@@ -8,18 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WPF1
+namespace WPF1.Employee.UI
 {
-    public partial class EmployeePopup : Form
+    public partial class EmployeePopup : Master.UI.MasterPopup
     {
         public EmployeePopup()
         {
             InitializeComponent();
         }
 
-        private void Form1_1_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

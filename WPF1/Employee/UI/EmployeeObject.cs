@@ -8,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WPF1
+namespace WPF1.Employee.UI
 {
-    public partial class EmployeeObject : Form
+    public partial class EmployeeObject : Master.UI.MasterObject
     {
         public EmployeeObject()
         {

@@ -80,6 +80,6 @@
 
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btncancel;
-        private System.Windows.Forms.Panel pnlData;
+        protected System.Windows.Forms.Panel pnlData;
     }
 }

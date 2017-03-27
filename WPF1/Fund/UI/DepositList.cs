@@ -8,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WPF1
+namespace WPF1.Fund.UI
 {
-    public partial class DepositList : Form
+    public partial class DepositList : Master.UI.MasterList
     {
         public DepositList()
         {

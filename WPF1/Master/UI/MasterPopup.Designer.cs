@@ -32,6 +32,8 @@
             this.btncancel = new System.Windows.Forms.Button();
             this.pnlData = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
+            this.selectFile = new System.Windows.Forms.Button();
+            this.pnlData.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnSave
@@ -56,9 +58,6 @@
             // 
             // pnlData
             // 
-            this.pnlData.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlData.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlData.Location = new System.Drawing.Point(17, 61);
             this.pnlData.Name = "pnlData";
@@ -76,11 +75,22 @@
             this.btnExit.Text = "ออกจากหน้าจอ";
             this.btnExit.UseVisualStyleBackColor = true;
             // 
+            // selectFile
+            // 
+            this.selectFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.selectFile.Location = new System.Drawing.Point(224, 12);
+            this.selectFile.Name = "selectFile";
+            this.selectFile.Size = new System.Drawing.Size(84, 33);
+            this.selectFile.TabIndex = 0;
+            this.selectFile.Text = "เลือกไฟล์";
+            this.selectFile.UseVisualStyleBackColor = true;
+            // 
             // MasterPopup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 311);
+            this.Controls.Add(this.selectFile);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.pnlData);
             this.Controls.Add(this.btnSave);
@@ -88,7 +98,8 @@
             this.MinimumSize = new System.Drawing.Size(700, 350);
             this.Name = "MasterPopup";
             this.Text = "MasterPopup";
-            this.Load += new System.EventHandler(this.Form1_1_Load);
+            this.pnlData.ResumeLayout(false);
+            this.pnlData.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -97,7 +108,8 @@
 
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btncancel;
-        private System.Windows.Forms.Panel pnlData;
+        protected System.Windows.Forms.Panel pnlData;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button selectFile;
     }
 }

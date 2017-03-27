@@ -1,4 +1,4 @@
-﻿namespace WPF1
+﻿namespace WPF1.Company.UI
 {
     partial class PositionList
     {
@@ -32,12 +32,24 @@
             this.compa = new System.Windows.Forms.Label();
             this.status = new System.Windows.Forms.Label();
             this.statusList = new System.Windows.Forms.ComboBox();
+            this.pnlData.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // pnlData
+            // 
+            this.pnlData.Controls.Add(this.compaList);
+            this.pnlData.Controls.Add(this.status);
+            this.pnlData.Controls.Add(this.compa);
+            this.pnlData.Controls.Add(this.statusList);
+            this.pnlData.Controls.SetChildIndex(this.statusList, 0);
+            this.pnlData.Controls.SetChildIndex(this.compa, 0);
+            this.pnlData.Controls.SetChildIndex(this.status, 0);
+            this.pnlData.Controls.SetChildIndex(this.compaList, 0);
             // 
             // compaList
             // 
             this.compaList.FormattingEnabled = true;
-            this.compaList.Location = new System.Drawing.Point(167, 24);
+            this.compaList.Location = new System.Drawing.Point(170, 20);
             this.compaList.Name = "compaList";
             this.compaList.Size = new System.Drawing.Size(324, 21);
             this.compaList.TabIndex = 8;
@@ -47,7 +59,7 @@
             // 
             this.compa.AutoSize = true;
             this.compa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.compa.Location = new System.Drawing.Point(18, 24);
+            this.compa.Location = new System.Drawing.Point(21, 20);
             this.compa.Name = "compa";
             this.compa.Size = new System.Drawing.Size(95, 20);
             this.compa.TabIndex = 9;
@@ -57,7 +69,7 @@
             // 
             this.status.AutoSize = true;
             this.status.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.status.Location = new System.Drawing.Point(18, 64);
+            this.status.Location = new System.Drawing.Point(21, 60);
             this.status.Name = "status";
             this.status.Size = new System.Drawing.Size(84, 20);
             this.status.TabIndex = 17;
@@ -68,7 +80,7 @@
             this.statusList.Items.AddRange(new object[] {
             " (1) Status = \'Active\'",
             " (2) Status = \'Inactive\'"});
-            this.statusList.Location = new System.Drawing.Point(167, 64);
+            this.statusList.Location = new System.Drawing.Point(170, 60);
             this.statusList.Name = "statusList";
             this.statusList.Size = new System.Drawing.Size(324, 21);
             this.statusList.TabIndex = 18;
@@ -79,15 +91,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 661);
-            this.Controls.Add(this.compaList);
-            this.Controls.Add(this.compa);
-            this.Controls.Add(this.status);
-            this.Controls.Add(this.statusList);
-            this.MinimumSize = new System.Drawing.Size(1000, 700);
             this.Name = "PositionList";
             this.Text = "PositionList";
+            this.pnlData.ResumeLayout(false);
+            this.pnlData.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

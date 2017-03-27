@@ -8,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WPF1
+namespace WPF1.Company.UI
 {
-    public partial class PositionList : Form
+    public partial class PositionList : Master.UI.MasterList
     {
         public PositionList()
         {

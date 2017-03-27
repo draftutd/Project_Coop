@@ -1,4 +1,4 @@
-﻿namespace WPF1
+﻿namespace WPF1.Company.UI
 {
     partial class PositionObject
     {
@@ -34,11 +34,22 @@
             this.position = new System.Windows.Forms.Label();
             this.companyList = new System.Windows.Forms.ComboBox();
             this.company = new System.Windows.Forms.Label();
+            this.pnlData.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // pnlData
+            // 
+            this.pnlData.Controls.Add(this.statusemp);
+            this.pnlData.Controls.Add(this.positionList);
+            this.pnlData.Controls.Add(this.companyList);
+            this.pnlData.Controls.Add(this.statusList);
+            this.pnlData.Controls.Add(this.position);
+            this.pnlData.Controls.Add(this.company);
+            this.pnlData.TabIndex = 10;
             // 
             // positionList
             // 
-            this.positionList.Location = new System.Drawing.Point(170, 63);
+            this.positionList.Location = new System.Drawing.Point(178, 58);
             this.positionList.Name = "positionList";
             this.positionList.Size = new System.Drawing.Size(285, 20);
             this.positionList.TabIndex = 9;
@@ -49,7 +60,7 @@
             this.statusList.Items.AddRange(new object[] {
             " (1) Status = \'Active\'",
             " (2) Status = \'Inactive\'"});
-            this.statusList.Location = new System.Drawing.Point(170, 98);
+            this.statusList.Location = new System.Drawing.Point(178, 93);
             this.statusList.Name = "statusList";
             this.statusList.Size = new System.Drawing.Size(285, 21);
             this.statusList.TabIndex = 8;
@@ -59,7 +70,7 @@
             // 
             this.statusemp.AutoSize = true;
             this.statusemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.statusemp.Location = new System.Drawing.Point(15, 98);
+            this.statusemp.Location = new System.Drawing.Point(23, 93);
             this.statusemp.Name = "statusemp";
             this.statusemp.Size = new System.Drawing.Size(84, 20);
             this.statusemp.TabIndex = 7;
@@ -69,7 +80,7 @@
             // 
             this.position.AutoSize = true;
             this.position.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.position.Location = new System.Drawing.Point(16, 63);
+            this.position.Location = new System.Drawing.Point(24, 58);
             this.position.Name = "position";
             this.position.Size = new System.Drawing.Size(76, 20);
             this.position.TabIndex = 5;
@@ -78,7 +89,7 @@
             // companyList
             // 
             this.companyList.FormattingEnabled = true;
-            this.companyList.Location = new System.Drawing.Point(170, 28);
+            this.companyList.Location = new System.Drawing.Point(178, 23);
             this.companyList.Name = "companyList";
             this.companyList.Size = new System.Drawing.Size(285, 21);
             this.companyList.TabIndex = 1;
@@ -88,7 +99,7 @@
             // 
             this.company.AutoSize = true;
             this.company.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.company.Location = new System.Drawing.Point(15, 28);
+            this.company.Location = new System.Drawing.Point(23, 23);
             this.company.Name = "company";
             this.company.Size = new System.Drawing.Size(115, 20);
             this.company.TabIndex = 0;
@@ -99,17 +110,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 661);
-            this.Controls.Add(this.positionList);
-            this.Controls.Add(this.statusList);
-            this.Controls.Add(this.statusemp);
-            this.Controls.Add(this.company);
-            this.Controls.Add(this.position);
-            this.Controls.Add(this.companyList);
-            this.MinimumSize = new System.Drawing.Size(1000, 700);
             this.Name = "PositionObject";
-            this.Text = "Form6";
+            this.Text = "PositionObject";
+            this.pnlData.ResumeLayout(false);
+            this.pnlData.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -120,5 +125,6 @@
         private System.Windows.Forms.Label statusemp;
         private System.Windows.Forms.ComboBox statusList;
         private System.Windows.Forms.TextBox positionList;
+        protected System.Windows.Forms.Panel pnlData;
     }
 }

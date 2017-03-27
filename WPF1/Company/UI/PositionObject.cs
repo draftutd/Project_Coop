@@ -8,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WPF1
+namespace WPF1.Company.UI
 {
-    public partial class PositionObject : Form
+    public partial class PositionObject : Master.UI.MasterObject
     {
         public PositionObject()
         {

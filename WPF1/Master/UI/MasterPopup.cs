@@ -17,9 +17,6 @@ namespace WPF1.Master.UI
             InitializeComponent();
         }
 
-        private void Form1_1_Load(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

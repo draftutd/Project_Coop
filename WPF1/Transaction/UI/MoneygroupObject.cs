@@ -8,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WPF1
+namespace WPF1.Transaction.UI
 {
-    public partial class MoneygroupObject : Form
+    public partial class MoneygroupObject : Master.UI.MasterObject
     {
         public MoneygroupObject()
         {

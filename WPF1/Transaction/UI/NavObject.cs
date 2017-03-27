@@ -8,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WPF1
+namespace WPF1.Transaction.UI
 {
-    public partial class NavObject : Form
+    public partial class NavObject : Master.UI.MasterObject
     {
         public NavObject()
         {

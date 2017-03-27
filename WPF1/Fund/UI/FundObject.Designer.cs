@@ -1,4 +1,4 @@
-﻿namespace WPF1
+﻿namespace WPF1.Fund.UI
 {
     partial class FundObject
     {
@@ -40,12 +40,13 @@
             this.fundCode = new System.Windows.Forms.Label();
             this.companyList = new System.Windows.Forms.ComboBox();
             this.company = new System.Windows.Forms.Label();
+            this.pnlData.SuspendLayout();
             this.SuspendLayout();
             // 
             // codetransferList
             // 
             this.codetransferList.FormattingEnabled = true;
-            this.codetransferList.Location = new System.Drawing.Point(657, 65);
+            this.codetransferList.Location = new System.Drawing.Point(653, 64);
             this.codetransferList.Name = "codetransferList";
             this.codetransferList.Size = new System.Drawing.Size(259, 21);
             this.codetransferList.TabIndex = 15;
@@ -54,7 +55,7 @@
             // 
             this.codetransfer.AutoSize = true;
             this.codetransfer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.codetransfer.Location = new System.Drawing.Point(492, 67);
+            this.codetransfer.Location = new System.Drawing.Point(488, 66);
             this.codetransfer.Name = "codetransfer";
             this.codetransfer.Size = new System.Drawing.Size(157, 20);
             this.codetransfer.TabIndex = 14;
@@ -62,7 +63,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(657, 24);
+            this.dateTimePicker1.Location = new System.Drawing.Point(653, 23);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.ShowCheckBox = true;
             this.dateTimePicker1.Size = new System.Drawing.Size(259, 20);
@@ -72,7 +73,7 @@
             // 
             this.dateOff.AutoSize = true;
             this.dateOff.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.dateOff.Location = new System.Drawing.Point(492, 27);
+            this.dateOff.Location = new System.Drawing.Point(488, 26);
             this.dateOff.Name = "dateOff";
             this.dateOff.Size = new System.Drawing.Size(86, 20);
             this.dateOff.TabIndex = 12;
@@ -80,7 +81,7 @@
             // 
             // fundNameList
             // 
-            this.fundNameList.Location = new System.Drawing.Point(193, 106);
+            this.fundNameList.Location = new System.Drawing.Point(189, 105);
             this.fundNameList.Name = "fundNameList";
             this.fundNameList.Size = new System.Drawing.Size(260, 20);
             this.fundNameList.TabIndex = 11;
@@ -89,7 +90,7 @@
             // 
             this.fundName.AutoSize = true;
             this.fundName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.fundName.Location = new System.Drawing.Point(28, 106);
+            this.fundName.Location = new System.Drawing.Point(24, 105);
             this.fundName.Name = "fundName";
             this.fundName.Size = new System.Drawing.Size(89, 20);
             this.fundName.TabIndex = 10;
@@ -97,7 +98,7 @@
             // 
             // fundCodeList
             // 
-            this.fundCodeList.Location = new System.Drawing.Point(193, 67);
+            this.fundCodeList.Location = new System.Drawing.Point(189, 66);
             this.fundCodeList.Name = "fundCodeList";
             this.fundCodeList.Size = new System.Drawing.Size(260, 20);
             this.fundCodeList.TabIndex = 9;
@@ -108,7 +109,7 @@
             this.statusList.Items.AddRange(new object[] {
             " Active",
             " Inactive"});
-            this.statusList.Location = new System.Drawing.Point(656, 106);
+            this.statusList.Location = new System.Drawing.Point(652, 105);
             this.statusList.Name = "statusList";
             this.statusList.Size = new System.Drawing.Size(260, 21);
             this.statusList.TabIndex = 8;
@@ -118,7 +119,7 @@
             // 
             this.statusemp.AutoSize = true;
             this.statusemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.statusemp.Location = new System.Drawing.Point(494, 106);
+            this.statusemp.Location = new System.Drawing.Point(490, 105);
             this.statusemp.Name = "statusemp";
             this.statusemp.Size = new System.Drawing.Size(84, 20);
             this.statusemp.TabIndex = 7;
@@ -128,7 +129,7 @@
             // 
             this.fundCode.AutoSize = true;
             this.fundCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.fundCode.Location = new System.Drawing.Point(28, 67);
+            this.fundCode.Location = new System.Drawing.Point(24, 66);
             this.fundCode.Name = "fundCode";
             this.fundCode.Size = new System.Drawing.Size(96, 20);
             this.fundCode.TabIndex = 5;
@@ -137,7 +138,7 @@
             // companyList
             // 
             this.companyList.FormattingEnabled = true;
-            this.companyList.Location = new System.Drawing.Point(193, 27);
+            this.companyList.Location = new System.Drawing.Point(189, 26);
             this.companyList.Name = "companyList";
             this.companyList.Size = new System.Drawing.Size(260, 21);
             this.companyList.TabIndex = 1;
@@ -147,34 +148,39 @@
             // 
             this.company.AutoSize = true;
             this.company.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.company.Location = new System.Drawing.Point(28, 27);
+            this.company.Location = new System.Drawing.Point(24, 26);
             this.company.Name = "company";
             this.company.Size = new System.Drawing.Size(115, 20);
             this.company.TabIndex = 0;
             this.company.Text = "บริษัทต้นสังกัด (*)";
+            // 
+            // pnlData
+            // 
+            this.pnlData.Controls.Add(this.company);
+            this.pnlData.Controls.Add(this.codetransferList);
+            this.pnlData.Controls.Add(this.statusList);
+            this.pnlData.Controls.Add(this.codetransfer);
+            this.pnlData.Controls.Add(this.fundCodeList);
+            this.pnlData.Controls.Add(this.dateTimePicker1);
+            this.pnlData.Controls.Add(this.statusemp);
+            this.pnlData.Controls.Add(this.fundName);
+            this.pnlData.Controls.Add(this.dateOff);
+            this.pnlData.Controls.Add(this.fundCode);
+            this.pnlData.Controls.Add(this.companyList);
+            this.pnlData.Controls.Add(this.fundNameList);
             // 
             // FundObject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 661);
-            this.Controls.Add(this.codetransferList);
-            this.Controls.Add(this.codetransfer);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.company);
-            this.Controls.Add(this.dateOff);
-            this.Controls.Add(this.companyList);
-            this.Controls.Add(this.fundNameList);
-            this.Controls.Add(this.fundCode);
-            this.Controls.Add(this.fundName);
-            this.Controls.Add(this.statusemp);
-            this.Controls.Add(this.fundCodeList);
-            this.Controls.Add(this.statusList);
+            this.Controls.Add(this.pnlData);
             this.MinimumSize = new System.Drawing.Size(1000, 700);
             this.Name = "FundObject";
             this.Text = "FundObject";
+            this.pnlData.ResumeLayout(false);
+            this.pnlData.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

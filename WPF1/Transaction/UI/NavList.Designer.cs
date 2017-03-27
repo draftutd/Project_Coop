@@ -1,4 +1,4 @@
-﻿namespace WPF1
+﻿namespace WPF1.Transaction.UI
 {
     partial class Form13
     {
@@ -34,12 +34,29 @@
             this.codeFund = new System.Windows.Forms.Label();
             this.compaList = new System.Windows.Forms.ComboBox();
             this.compa = new System.Windows.Forms.Label();
+            this.pnlData.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // pnlData
+            // 
+            this.pnlData.Controls.Add(this.navList);
+            this.pnlData.Controls.Add(this.compa);
+            this.pnlData.Controls.Add(this.nav);
+            this.pnlData.Controls.Add(this.codeFund);
+            this.pnlData.Controls.Add(this.codeFundList);
+            this.pnlData.Controls.Add(this.compaList);
+            this.pnlData.TabIndex = 33;
+            this.pnlData.Controls.SetChildIndex(this.compaList, 0);
+            this.pnlData.Controls.SetChildIndex(this.codeFundList, 0);
+            this.pnlData.Controls.SetChildIndex(this.codeFund, 0);
+            this.pnlData.Controls.SetChildIndex(this.nav, 0);
+            this.pnlData.Controls.SetChildIndex(this.compa, 0);
+            this.pnlData.Controls.SetChildIndex(this.navList, 0);
             // 
             // navList
             // 
             this.navList.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.navList.Location = new System.Drawing.Point(622, 35);
+            this.navList.Location = new System.Drawing.Point(618, 20);
             this.navList.Name = "navList";
             this.navList.Size = new System.Drawing.Size(293, 22);
             this.navList.TabIndex = 32;
@@ -48,7 +65,7 @@
             // 
             this.nav.AutoSize = true;
             this.nav.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.nav.Location = new System.Drawing.Point(497, 37);
+            this.nav.Location = new System.Drawing.Point(494, 22);
             this.nav.Name = "nav";
             this.nav.Size = new System.Drawing.Size(92, 20);
             this.nav.TabIndex = 31;
@@ -57,7 +74,7 @@
             // codeFundList
             // 
             this.codeFundList.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.codeFundList.Location = new System.Drawing.Point(138, 82);
+            this.codeFundList.Location = new System.Drawing.Point(134, 64);
             this.codeFundList.Name = "codeFundList";
             this.codeFundList.Size = new System.Drawing.Size(293, 22);
             this.codeFundList.TabIndex = 30;
@@ -66,7 +83,7 @@
             // 
             this.codeFund.AutoSize = true;
             this.codeFund.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.codeFund.Location = new System.Drawing.Point(20, 85);
+            this.codeFund.Location = new System.Drawing.Point(16, 67);
             this.codeFund.Name = "codeFund";
             this.codeFund.Size = new System.Drawing.Size(96, 20);
             this.codeFund.TabIndex = 29;
@@ -76,7 +93,7 @@
             // 
             this.compaList.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.compaList.FormattingEnabled = true;
-            this.compaList.Location = new System.Drawing.Point(138, 37);
+            this.compaList.Location = new System.Drawing.Point(134, 19);
             this.compaList.Name = "compaList";
             this.compaList.Size = new System.Drawing.Size(293, 24);
             this.compaList.TabIndex = 8;
@@ -86,7 +103,7 @@
             // 
             this.compa.AutoSize = true;
             this.compa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.compa.Location = new System.Drawing.Point(20, 40);
+            this.compa.Location = new System.Drawing.Point(16, 22);
             this.compa.Name = "compa";
             this.compa.Size = new System.Drawing.Size(95, 20);
             this.compa.TabIndex = 9;
@@ -97,17 +114,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 661);
-            this.Controls.Add(this.navList);
-            this.Controls.Add(this.nav);
-            this.Controls.Add(this.codeFundList);
-            this.Controls.Add(this.compaList);
-            this.Controls.Add(this.codeFund);
-            this.Controls.Add(this.compa);
-            this.MinimumSize = new System.Drawing.Size(1000, 700);
             this.Name = "Form13";
             this.Text = "NavList";
+            this.pnlData.ResumeLayout(false);
+            this.pnlData.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

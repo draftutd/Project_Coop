@@ -1,4 +1,4 @@
-﻿namespace WPF1
+﻿namespace WPF1.Employee.UI
 {
     partial class EmployeeObject
     {
@@ -83,11 +83,40 @@
             this.reserve1List = new System.Windows.Forms.TextBox();
             this.reserve1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.pnlData.SuspendLayout();
             this.pnlAgeWork.SuspendLayout();
             this.pnlmoney.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pnlamount.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // pnlData
+            // 
+            this.pnlData.Controls.Add(this.label4);
+            this.pnlData.Controls.Add(this.pnlamount);
+            this.pnlData.Controls.Add(this.label3);
+            this.pnlData.Controls.Add(this.panel1);
+            this.pnlData.Controls.Add(this.label2);
+            this.pnlData.Controls.Add(this.pnlmoney);
+            this.pnlData.Controls.Add(this.label1);
+            this.pnlData.Controls.Add(this.fundList);
+            this.pnlData.Controls.Add(this.pnlAgeWork);
+            this.pnlData.Controls.Add(this.salaryList);
+            this.pnlData.Controls.Add(this.salary);
+            this.pnlData.Controls.Add(this.positList);
+            this.pnlData.Controls.Add(this.posit);
+            this.pnlData.Controls.Add(this.surnameList);
+            this.pnlData.Controls.Add(this.surname);
+            this.pnlData.Controls.Add(this.codeEmpList);
+            this.pnlData.Controls.Add(this.codeEmp);
+            this.pnlData.Controls.Add(this.fund);
+            this.pnlData.Controls.Add(this.branchList);
+            this.pnlData.Controls.Add(this.branch);
+            this.pnlData.Controls.Add(this.empName);
+            this.pnlData.Controls.Add(this.prefix);
+            this.pnlData.Controls.Add(this.emp);
+            this.pnlData.Controls.Add(this.companyList);
+            this.pnlData.Controls.Add(this.company);
             // 
             // company
             // 
@@ -621,34 +650,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 661);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.pnlamount);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.pnlmoney);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.fundList);
-            this.Controls.Add(this.pnlAgeWork);
-            this.Controls.Add(this.salaryList);
-            this.Controls.Add(this.salary);
-            this.Controls.Add(this.positList);
-            this.Controls.Add(this.posit);
-            this.Controls.Add(this.surnameList);
-            this.Controls.Add(this.surname);
-            this.Controls.Add(this.codeEmpList);
-            this.Controls.Add(this.codeEmp);
-            this.Controls.Add(this.fund);
-            this.Controls.Add(this.branchList);
-            this.Controls.Add(this.branch);
-            this.Controls.Add(this.empName);
-            this.Controls.Add(this.prefix);
-            this.Controls.Add(this.emp);
-            this.Controls.Add(this.companyList);
-            this.Controls.Add(this.company);
-            this.MinimumSize = new System.Drawing.Size(1000, 700);
             this.Name = "EmployeeObject";
-            this.Text = "Form2";
+            this.Text = "EmployeeObject";
+            this.pnlData.ResumeLayout(false);
+            this.pnlData.PerformLayout();
             this.pnlAgeWork.ResumeLayout(false);
             this.pnlAgeWork.PerformLayout();
             this.pnlmoney.ResumeLayout(false);
@@ -658,7 +663,6 @@
             this.pnlamount.ResumeLayout(false);
             this.pnlamount.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

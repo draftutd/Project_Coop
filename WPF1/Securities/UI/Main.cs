@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WPF1
+namespace WPF1.Securities.UI
 {
     public partial class Main : Form
     {
@@ -17,9 +17,6 @@ namespace WPF1
             InitializeComponent();
         }
 
-        private void ขอมลพนกงานToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            new WPF1.Employee.UI.Employeelist().ShowDialog();
-        }
+
     }
 }

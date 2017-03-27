@@ -1,4 +1,4 @@
-﻿namespace WPF1
+﻿namespace WPF1.Employee.UI
 {
     partial class EmployeePopup
     {
@@ -32,16 +32,23 @@
             this.file = new System.Windows.Forms.Label();
             this.compaList = new System.Windows.Forms.ComboBox();
             this.compa = new System.Windows.Forms.Label();
+            this.pnlData.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // pnlData
+            // 
+            this.pnlData.Controls.Add(this.positionList);
+            this.pnlData.Controls.Add(this.file);
+            this.pnlData.Controls.Add(this.compaList);
+            this.pnlData.Controls.Add(this.compa);
+            this.pnlData.TabIndex = 0;
             // 
             // positionList
             // 
-            this.positionList.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.positionList.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.positionList.Location = new System.Drawing.Point(103, 68);
+            this.positionList.Location = new System.Drawing.Point(103, 62);
             this.positionList.Name = "positionList";
-            this.positionList.Size = new System.Drawing.Size(324, 22);
+            this.positionList.Size = new System.Drawing.Size(327, 22);
             this.positionList.TabIndex = 9;
             this.positionList.Text = " กรุณาเลือกไฟล์";
             // 
@@ -49,7 +56,7 @@
             // 
             this.file.AutoSize = true;
             this.file.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.file.Location = new System.Drawing.Point(22, 68);
+            this.file.Location = new System.Drawing.Point(22, 62);
             this.file.Name = "file";
             this.file.Size = new System.Drawing.Size(51, 20);
             this.file.TabIndex = 0;
@@ -59,9 +66,9 @@
             // 
             this.compaList.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.compaList.FormattingEnabled = true;
-            this.compaList.Location = new System.Drawing.Point(103, 26);
+            this.compaList.Location = new System.Drawing.Point(103, 20);
             this.compaList.Name = "compaList";
-            this.compaList.Size = new System.Drawing.Size(324, 24);
+            this.compaList.Size = new System.Drawing.Size(327, 24);
             this.compaList.TabIndex = 10;
             this.compaList.Text = " ระบุเลือกบริษัท";
             // 
@@ -69,7 +76,7 @@
             // 
             this.compa.AutoSize = true;
             this.compa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.compa.Location = new System.Drawing.Point(22, 30);
+            this.compa.Location = new System.Drawing.Point(22, 24);
             this.compa.Name = "compa";
             this.compa.Size = new System.Drawing.Size(44, 20);
             this.compa.TabIndex = 11;
@@ -79,16 +86,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(532, 217);
-            this.Controls.Add(this.compaList);
-            this.Controls.Add(this.compa);
-            this.Controls.Add(this.positionList);
-            this.Controls.Add(this.file);
+            this.ClientSize = new System.Drawing.Size(684, 311);
             this.Name = "EmployeePopup";
             this.Text = "EmployeePopup";
-            this.Load += new System.EventHandler(this.Form1_1_Load);
+            this.pnlData.ResumeLayout(false);
+            this.pnlData.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
