@@ -125,6 +125,5 @@
         private System.Windows.Forms.Label statusemp;
         private System.Windows.Forms.ComboBox statusList;
         private System.Windows.Forms.TextBox positionList;
-        protected System.Windows.Forms.Panel pnlData;
     }
 }
