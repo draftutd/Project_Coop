@@ -1,0 +1,45 @@
+00000000:Data Source=128.1.0.59,1433;Network Library=DBMSSOCN;initial catalog=dbwpf;User Id=wpf;Password=wealth;Min Pool Size=5;Max Pool Size=10;
+00000001:123456
+
+00001001:select company_id, company_name from tbl_company order by 1
+00001002:select position_id, position_name from tbl_position order by 1
+00001003:select department_id, department_name from tbl_department order by 1
+00001004:select bank_id, bank_name from tbl_bank order by 2
+00001005:select branch_id, branch_name from tbl_branch order by 2
+
+10001101:sp_authenticate
+10001102:sp_getprivilege
+10001103:sp_createactivitylog
+10001104:sp_closesession
+
+20001001:select fund_type_id, fund_type_name from tbl_fund_type
+20001002:select convert(bit, 0) scol, fd.fund_id, fd.company_id, cp.company_name, fd.fund_code, fd.fund_name, fd.fund_desc, fd.fund_type_id, tp.fund_type_name, fd.fund_risk, fd.start_date, fd.end_date, fd.fund_status, fd.created_by, fd.created_date, fd.updated_by, fd.updated_date, fd.data_status from tbl_fund fd inner join tbl_fund_type tp on fd.fund_type_id = tp.fund_type_id inner join tbl_company cp on cp.company_id = fd.company_id where fd.data_status=1 {0} order by fd.fund_name
+20001003:sp_deletefund 
+20001004:sp_insertfund
+20001005:sp_updatefund
+20001006:select fund_id id, fund_code code, company_id from tbl_fund where data_status = 1 and fund_status = 1 and isnull(end_date, '1/1/3000') > getdate() {0} order by 2
+20001007:select convert(bit, 0) scol, nav.nav_id, fnd.fund_id, fnd.fund_code, nav.nav_date, nav.nav, nav.bid, nav.offer, nav.created_by, nav.created_date, nav.updated_by, nav.updated_date, nav.data_status from tbl_nav nav inner join tbl_fund fnd on fnd.fund_id = nav.fund_id where fnd.data_status = 1 and nav.data_status = 1 
+20001008:sp_deletenav
+20001009:sp_insertnav
+20001010:sp_updatenav
+20001011:select fund_id id, fund_code code, company_id from tbl_fund where data_status = 1 {0} order by 2
+20001012:select fund_id id, fund_code code, company_id from tbl_fund where data_status = 1 and fund_status = 1 {0} order by 2
+
+30001001:select convert(bit, 0) scol, emp.emp_id, cmp.company_id, cmp.company_name, emp.emp_code, ttl.title_id, ttl.title_name, emp.firstname, emp.lastname, emp.manager_id, emp.username, emp.passwords, dep.department_id, dep.department_name, pos.position_id, pos.position_name, emp.salary, emp.receive_method, case when emp.receive_method = 1 then 'àªç¤' else 'âÍ¹à§Ô¹' end method, emp.bankaccount_no, emp.bank_id, emp.branch_id, emp.start_date, emp.effective_date, emp.resign_date, emp.ben_percentages, emp.ben_amount, emp.emp_status, emp.created_by, emp.created_date, emp.updated_by, emp.updated_date, emp.data_status, emp.company_flag from tbl_employee emp inner join tbl_title ttl on ttl.title_id = emp.title_id inner join tbl_company cmp on cmp.company_id = emp.company_id left join tbl_position pos on pos.position_id = emp.position_id left join tbl_department dep on dep.department_id = emp.department_id where emp.data_status = 1 {0} order by emp.firstname, emp.lastname
+30001002:select title_id, title_name from tbl_title order by 2
+30001003:select emp_id, firstname + ' ' + lastname as name from tbl_employee where data_status = 1 and isnull(resign_date, '1/1/3000') > getdate() {0} order by 2
+30001004:select choice_id, emp_id, fund_id, percentage, choicelvel from tbl_employee_choice where 1 = 1 {0} order by choicelvel
+30001005:sp_insertemployee
+30001006:sp_updateemployee
+30001007:sp_deleteemployee
+
+40001001:select convert(bit, 0) scol,con.condition_id, con.company_id, com.company_name, con.condition_name, con.condition_seq, con.condition_type, case when con.condition_type=1 then '«×éÍ' else 'ä¶è¶Í¹' end condtion_typename, con.con_year_start, con.con_year_end, con.con_position, pos.position_name, con.ben_percentage, con.ben_amount, con.created_by, con.created_date, con.updated_by, con.updated_date, con.data_status from tbl_condition con left join tbl_company com on com.company_id = con.company_id left join tbl_position pos on pos.position_id = con.con_position where con.data_status = 1 {0} order by con.condition_seq, con.con_year_start
+40001002:sp_insertcondition
+40001003:sp_updatecondition
+40001004:sp_deletecondition
+40001005: sp_getbenefit
+40001006: sp_inserttransaction
+40001007: select {1} trn.transaction_id, trn.transaction_date, emp.emp_code, ttl.title_name, emp.firstname, emp.lastname, case when trn.transaction_type = 1 then 'ÃÒÂ¡ÒÃ«×éÍ' when trn.transaction_type = 2 then 'ÃÒÂ¡ÒÃä¶è¶Í¹' else '' end transaction_typename, fnd.fund_code, isnull(trn.tran_unit,'') tran_unit, isnull(trn.tran_amount,'') tran_amout, case when trn.channel = 1 then 'System' when trn.channel = 2 then 'Import' when trn.channel = 3 then 'Manual' else '' end channeldesc, emp.emp_id, fnd.fund_id, trn.ref_proc, trn.channel, emp.company_id, trn.transaction_type, trn.transaction_status, trn.created_date, trn.created_by, trn.updated_date, trn.updated_by, trn.data_status,trn.allot_id, trn.allot_nav, trn.allot_unit, trn.allot_amount from tbl_transaction trn inner join tbl_employee emp on emp.emp_id = trn.employee_id inner join tbl_title ttl on ttl.title_id = emp.title_id inner join tbl_fund fnd on fnd.fund_id = trn.fund_id where trn.data_status = 1 and emp.data_status = 1 {0} order by trn.transaction_date, emp.emp_code
+40001008: ;with nav as (Select top 1 nav from tbl_nav nav where nav.fund_id = {1} order by nav_date desc)select bal.balance_unit, nav.nav from nav, tbl_balance bal where bal.fund_id = {1} and bal.employee_id = {0} 
+40001009:sp_deletetransaction
+40001010:sp_updatetransaction
